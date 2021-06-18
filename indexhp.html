@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- footer links -->
+    <!-- <script src="https://unpkg.com/feather-icons"></script> -->
+    <link rel="icon" href="faviconFaasos.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Welcome to Faasos</title>
+    <style type="text/css">
+      @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      .headtext1 {
+        font-size: 25px;
+        padding: 0;
+        margin: 0;
+        font-weight: 600;
+        color: black;
+      }
+
+      .formContainer1 {
+        width: 400px;
+        margin: auto;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        font-size: 20px;
+        padding: 1%;
+      }
+      input,
+      #btnn1 {
+        width: 80%;
+        margin: auto;
+        height: 30px;
+        font-size: 20px;
+        border-bottom-width: 1px;
+        margin: 5% 1%;
+      }
+      #btnn1 {
+        width: 85%;
+        height: 60px;
+        font-size: 16px;
+        font-weight: 600;
+        background-color: rgb(243, 214, 83);
+        color: black;
+      }
+      .formHeader p {
+        /* max-width: 360px; */
+        /* padding: 0; */
+        color: black !important;
+        font-size: 16px;
+      }
+      .formFooter {
+        font-size: 80%;
+        color: black !important;
+      }
+      .signupForm input {
+        height: 50px;
+        width: 82%;
+      }
+
+      /* The Modal (background) */
+      .modal1,
+      .modal2 {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+        z-index: 10;
+      }
+      .modal1 p,
+      .modal2 p {
+        color: black !important;
+      }
+
+      /* Modal Content (image) */
+      .modal-content1 {
+        margin: auto;
+        display: block;
+        border-radius: 15px;
+      }
+
+      /* Caption of Modal Image */
+      #captions1 {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        text-align: center;
+        color: #ccc;
+        padding: 10px 0;
+        height: 150px;
+      }
+
+      /* Add Animation */
+      .modal-content1,
+      #captions1 {
+        -webkit-animation-name: zoom;
+        -webkit-animation-duration: 0.6s;
+        animation-name: zoom;
+        animation-duration: 0.6s;
+      }
+
+      @-webkit-keyframes zoom {
+        from {
+          -webkit-transform: scale(0);
+        }
+        to {
+          -webkit-transform: scale(1);
+        }
+      }
+
+      @keyframes zoom {
+        from {
+          transform: scale(0);
+        }
+        to {
+          transform: scale(1);
+        }
+      }
+
+      /* The Close Button */
+      .close1 {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        color: #f1f1f1;
+        font-size: 40px;
+        font-weight: bold;
+        transition: 0.3s;
+      }
+
+      .close1:hover,
+      .close1:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      body {
+        margin: 0;
+      }
+      .content,
+      button,
+      .userLogin {
+        display: flex;
+      }
+      .userLogin {
+        margin: 30px 5px 0 5px;
+        width: 60%;
+
+        justify-content: flex-end;
+      }
+
+      .userbtn1 {
+        margin-left: 20px;
+      }
+      .login1 {
+        padding: 5px;
+        margin: 15px;
+        border-radius: 5px;
+        box-shadow: 1px 1px 2px 1px rgb(25, 24, 95);
+        border: 1px solid rgb(243, 214, 83);
+      }
+      .userbtn {
+        box-sizing: border-box;
+        padding: 5px;
+      }
+      .headtext {
+        font-size: 40px;
+        margin-top: 0 0 48px;
+        width: 80%;
+        margin: 0 0 48px 90px;
+        color: white;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        justify-content: space-between;
+        box-sizing: border-box;
+        margin: 60px 0 60px 90px;
+      }
+
+      button {
+        background-color: transparent;
+        border: none;
+      }
+      img.logo {
+        width: 140px;
+        height: 80px;
+      }
+
+      .login {
+        color: rgb(243, 214, 83);
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-weight: 900;
+        font-size: 20px;
+
+        background-image: transparent;
+      }
+
+      svg {
+        fill: rgb(243, 214, 83);
+        stroke: rgb(243, 214, 83);
+        stroke-width: "2";
+      }
+      #homepage-header {
+        display: flex;
+        flex-direction: column;
+      }
+
+      #homepage-header {
+        flex-direction: row;
+        width: 100%;
+      }
+      .location-div {
+        width: 100%;
+        z-index: 1;
+        position: relative;
+        height: 540px;
+        background-image: url(https://assets.faasos.io/faasos_v2/brandPattern.png);
+      }
+
+      .image-div-image {
+        width: 560px;
+        height: 580px;
+        border-radius: 0 0 0 50px;
+      }
+      .locateme {
+        width: 845px;
+        height: 68px;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        margin-left: 90px;
+        position: absolute;
+        z-index: 2;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .yellowbutton {
+        width: 150px;
+        height: 68px;
+        border-radius: 0 5px 5px 0;
+        align-items: center;
+        text-align: center;
+        float: right;
+        color: black;
+        font-size: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        background-color: rgb(243, 214, 83);
+      }
+
+      .whitespace {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .outputright {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 30px;
+        font-size: 20px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: gray;
+      }
+      .inputright {
+        display: flex;
+        flex-direction: row;
+      }
+
+      @media screen and (min-width: 1440px) {
+        .location-div {
+          height: 570px;
+          width: 100%;
+        }
+
+        .image-div-image {
+          height: 680px;
+          width: 660px;
+        }
+      }
+
+      @media screen and (max-width: 989px) {
+        .userLogin {
+          flex-direction: column;
+          width: 70%;
+        }
+
+        .userbtn1 {
+          margin-left: 0;
+        }
+        .faasosLogo {
+          box-sizing: border-box;
+
+          padding-top: 60px;
+        }
+      }
+
+      @media screen and (max-width: 959px) {
+        .image-div-image {
+          display: none;
+        }
+
+        .content,
+        .headtext,
+        .locateme {
+          margin-left: 0;
+        }
+      }
+
+      @media screen and (max-width: 1279px) {
+        .content,
+        .headtext,
+        .locateme {
+          margin-left: 30px;
+        }
+      }
+      @media (max-width: 330px) {
+        .locateme {
+          margin-left: 10px;
+        }
+      }
+      /* homepage done above middle content started below */
+      body {
+        margin: 0px;
+      }
+
+      h1,
+      .h6,
+      .grid0,
+      .bottomline,
+      .boxxcontainer,
+      .text {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+
+      .bottomline {
+        font-size: 13px;
+        margin: 5px 0 30px 0;
+      }
+      .h6 {
+        font-size: 16px;
+        margin-top: 10px;
+        line-height: 0.6cm;
+      }
+
+      h1,
+      .bottomline {
+        text-align: center;
+      }
+
+      .youtubecont {
+        display: flex;
+        flex-direction: row;
+        border: none;
+        max-width: 1100px;
+        width: 97%;
+        /* height: auto; */
+        border-radius: 1vw;
+        margin: 30px auto;
+        max-width: 974px;
+        height: 250px;
+        height: auto;
+        max-width: 1000px;
+      }
+
+      .line {
+        display: flex;
+        flex-direction: row;
+      }
+      .cont1,
+      .cont2 {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+      }
+
+      .cont1 {
+        box-sizing: border-box;
+        padding: 30px 0 20px 20px;
+      }
+      iframe {
+        border: 5px inset rgb(145, 136, 231);
+        border-radius: 5px;
+        width: 100%;
+        height: 100%;
+      }
+      .tablet2 {
+        /* background-color: white; */
+        padding-top: 20px;
+        width: 100%;
+        margin: auto;
+      }
+
+      #midle-content {
+        background-color: rgb(243, 241, 236);
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+      ul {
+        padding-left: 0px;
+        margin-block-start: 0em;
+      }
+      /* boxxcontainer */
+      .tablet3 {
+        max-width: 1100px;
+        margin: auto;
+      }
+      .hexagon {
+        background: rgb(58, 58, 179);
+        width: 97%;
+        margin: auto;
+        padding: 0px 10px;
+      }
+
+      .hexagon:before,
+      .hexagon:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 100%;
+        border-bottom: 15px solid rgb(93, 93, 185);
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+      }
+
+      .hexagon:after {
+        bottom: auto;
+        top: 100%;
+        border-bottom: none;
+        border-top: 15px solid rgb(93, 93, 185);
+      }
+      .hexagon,
+      .boxxcontainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: white;
+      }
+      .hexagon {
+        position: relative;
+        background: rgb(93, 93, 185);
+        height: auto;
+        max-width: 1100px;
+        width: 97%;
+        margin: auto;
+        height: auto;
+        margin-bottom: -4vw;
+      }
+
+      .boxx {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .boxx1,
+      .boxx2,
+      .boxx3,
+      .boxx4 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        box-sizing: border-box;
+        padding: 10px 14px;
+      }
+      .tickmark {
+        text-align: center;
+        display: block;
+        border-radius: 3px;
+        width: 13px;
+        background-color: white;
+        font-size: 10px;
+        height: 13px;
+        border: 1px solid black;
+        margin: 5px auto;
+        color: rgb(100, 86, 223);
+      }
+      .ticks,
+      .text {
+        font-size: 13px;
+      }
+      hr {
+        background-color: white;
+        border-right: 0.1vw solid white;
+        margin: 0 20px;
+      }
+      /* boxxcontainer */
+
+      .grid0 {
+        margin: 150px 0 50px 0;
+        font-size: 16px;
+        color: rgb(243, 214, 83);
+        text-align: center;
+      }
+
+      .tablet4 {
+        background-color: rgb(84, 61, 146);
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 20px;
+        height: auto;
+      }
+      #flexbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 1100px;
+        align-items: flex-end;
+        margin: auto;
+        padding: 5px;
+      }
+      .grid1 {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 5px;
+      }
+      .png {
+        width: 77px;
+        height: 50px;
+      }
+      .text {
+        color: white;
+      }
+      .div2 {
+        margin-top: 16px;
+
+        text-align: center;
+      }
+
+      @media screen and (max-width: 1023px) {
+        .youtubecont {
+          flex-direction: column;
+        }
+        .cont1,
+        .cont2 {
+          width: 100%;
+          padding: 0;
+        }
+        ul {
+          margin: 0;
+        }
+        iframe {
+          width: 345px;
+          height: 223px;
+          margin: auto;
+        }
+
+        #flexbox {
+          display: grid;
+          grid-template-columns: 60% 40%;
+        }
+        .grid1 {
+          width: 100%;
+        }
+
+        .png {
+          width: 50px;
+          height: 32px;
+        }
+        .text {
+          margin-top: 0;
+        }
+        li.line {
+          width: 65%;
+          margin: auto;
+          align-items: center;
+        }
+      }
+      @media screen and (min-width: 961px) and (max-width: 1023px) {
+        .text {
+          margin: 0 0 3px 0;
+        }
+        #flexbox {
+          grid-template-columns: 58% 43%;
+        }
+        .div1,
+        .div2 {
+          height: 32px;
+        }
+      }
+      @media screen and (max-width: 960px) {
+        .tablet3 {
+          margin-bottom: -8vw;
+        }
+        .locateme {
+          width: 90%;
+        }
+
+        .ticks {
+          font-size: 10px;
+        }
+        .h6 {
+          font-size: 14px;
+          color: black;
+        }
+        h1 {
+          font-size: 20px;
+        }
+
+        .grid1 {
+          flex-direction: row;
+        }
+        .png {
+          width: 50px;
+          height: 30px;
+          margin: 0px 10px 15px 0px;
+        }
+        .div2 {
+          margin-top: 0;
+          text-align: start;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .boxxcontainer {
+          flex-direction: column;
+          justify-content: flex-start;
+          width: 60%;
+        }
+        .hexagon {
+          justify-content: flex-start;
+          width: 100%;
+        }
+        #headerbox {
+          height: 400px;
+        }
+        .locateme,
+        .yellowbutton {
+          height: 54px;
+        }
+
+        .tablet3 {
+          margin-top: 20px;
+          margin-bottom: -19vw;
+          align-items: center;
+        }
+
+        .tickmark {
+          margin: 10px 10px 0 0;
+        }
+        .ticks {
+          margin: 10px 0 0 0;
+        }
+
+        hr {
+          display: none;
+        }
+        .boxx1,
+        .boxx2,
+        .boxx3,
+        .boxx4 {
+          display: flex;
+          flex-direction: row;
+          padding: 0;
+          /* margin: 10px 0 10px 0; */
+        }
+        .boxx {
+          width: 150px;
+          justify-content: space-around;
+        }
+
+        .hexagon {
+          width: 65%;
+          margin: auto;
+          align-items: center;
+        }
+      }
+
+      @media screen and (max-width: 659px) {
+        #flexbox {
+          grid-template-columns: 100%;
+        }
+      }
+      .svg {
+        margin: 0 25px 25px 0;
+        color: rgb(243, 214, 83);
+      }
+      path {
+        width: 54px;
+      }
+
+      /* footer started */
+      .right,
+      .header,
+      .content,
+      button,
+      .userLogin,
+      .citiesbox,
+      .cityy,
+      .city37,
+      .city38 {
+        display: flex;
+      }
+
+      .header {
+        box-shadow: 0 0 1vw rgba(17, 6, 66, 0.5);
+        background-color: transparent;
+      }
+      .userLogin {
+        width: 26%;
+        display: flex;
+        justify-content: flex-end;
+        flex-direction: row;
+      }
+      .userbtn {
+        background-color: transparent;
+        padding-right: 15px;
+      }
+      .home {
+        padding: 0 8px 1vw 1vw;
+        background-color: transparent;
+        color: rgb(243, 214, 83);
+      }
+      .content {
+        width: 100%;
+        justify-content: space-between;
+        box-sizing: border-box;
+        max-width: 1300px;
+
+        padding: 20px 5px;
+        margin: auto;
+      }
+
+      button {
+        /* background-color: white; */
+        border: none;
+      }
+
+      h4,
+      .h5 {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: #333333;
+        line-height: 0;
+        flex-wrap: wrap;
+      }
+      h4 {
+        margin: 5px 0px 25px 0px;
+      }
+
+      svg {
+        stroke: rgb(243, 214, 83);
+        fill: rgb(243, 214, 83);
+
+        stroke-width: "2";
+      }
+
+      .citiesbox1,
+      .footerbox {
+        background-color: #010936;
+      }
+      p {
+        color: white;
+        font-family: "Nunito", sans-serif;
+      }
+      .citiesbox {
+        max-width: 70vw;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .citiesbox1 {
+        display: flex;
+        max-width: 1400px;
+        margin: auto;
+        flex-wrap: wrap;
+      }
+      .footerbox {
+        box-sizing: border-box;
+        padding: 30px;
+      }
+
+      .legal_contact {
+        display: flex;
+        max-width: 70vw;
+        margin: auto;
+        flex-direction: row;
+        justify-content: flex-start;
+        line-height: 0;
+        flex-wrap: wrap;
+      }
+
+      .cityy,
+      .city37,
+      .city38 {
+        line-height: 0;
+        margin: -3px 0px;
+        width: 33%;
+        justify-content: flex-start;
+        font-size: 16px;
+      }
+      .heading {
+        font-family: "Nunito", sans-serif;
+        color: rgb(212, 208, 208);
+        font-size: 21px;
+        font-weight: 500;
+        width: 100%;
+      }
+      @media screen and (max-width: 550px) {
+        div.right,
+        div.left {
+          width: 100%;
+        }
+        .yellowbutton {
+          width: 110px;
+        }
+        .yellowbuttontext {
+          font-size: 16px;
+        }
+        .outputright {
+          margin-right: 5px;
+        }
+        .inputright {
+          width: 95%;
+          justify-content: flex-end;
+        }
+      }
+
+      @media screen and (max-width: 1439px) {
+        .cityy {
+          width: 25%;
+        }
+      }
+      @media screen and (max-width: 764px) {
+        .cityy,
+        .city37,
+        .city38 {
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 1439px) {
+        .city37,
+        .city38 {
+          width: 50%;
+        }
+      }
+      @media screen and (max-width: 432px) {
+        .city37,
+        .city38 {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 498px) {
+        /* .yellowbutton {
+            z-index: 2;
+            position: relative;
+          }
+          .outputright {
+            z-index: 1;
+            position: absolute;
+          } */
+        .yellowbutton {
+          width: 35%;
+        }
+        .yellowbuttontext {
+          font-size: 13px;
+          margin: 0;
+        }
+      }
+      .space {
+        height: 40px;
+        width: 100%;
+      }
+      .city37,
+      .city38 {
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      hr {
+        color: rgb(102, 133, 238);
+        max-width: 1400px;
+      }
+      .city38 button,
+      .href1 {
+        background-color: #010936;
+        color: white;
+        font-family: "Nunito", sans-serif;
+        font-size: 16px;
+        margin-left: -7px;
+      }
+      .href1 {
+        margin-left: 0px;
+        text-decoration: none;
+      }
+      .btn p {
+        cursor: pointer;
+        line-height: 0px;
+        margin: 11px 0;
+        font-size: 16px;
+        flex-wrap: wrap;
+      }
+
+      .mail {
+        stroke: white;
+        fill: #010936;
+        cursor: pointer;
+      }
+      /* Style all font awesome icons */
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 25px;
+        height: 25px;
+        text-align: center;
+        text-decoration: none;
+      }
+      /* rounded icon */
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 17px;
+        height: 17px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        box-shadow: 0 4px rgba(153, 153, 153, 0.116);
+      }
+
+      /* Add a hover effect if you want */
+      .fa:hover,
+      .href1:active {
+        opacity: 0.3;
+      }
+      .fa:active {
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+      .href1:active {
+        transform: translateY(4px);
+      }
+      .fa-instagram {
+        background: rgb(82, 86, 119);
+        color: #010936;
+      }
+
+      /* Set a specific color for each brand */
+
+      /* Facebook */
+      .fa-facebook {
+        background: rgb(82, 86, 119);
+        color: #010936;
+      }
+
+      /* Twitter */
+      .fa-twitter {
+        background: rgb(82, 86, 119);
+        color: #010936;
+      }
+      .right p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        margin-top: 10px;
+        margin-right: 10px;
+        color: rgb(133, 133, 133);
+      }
+      a {
+        margin-right: 5px;
+      }
+      .right {
+        margin-top: 10px;
+        width: 50%;
+        justify-content: flex-end;
+      }
+
+      .left {
+        width: 50%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        color: rgb(133, 133, 133);
+        margin-top: 15px;
+        margin-bottom: 10px;
+
+        justify-content: flex-start;
+      }
+      .h6,
+      .bottomline {
+        color: black;
+      }
+
+      .citiesbox1 {
+        background-color: #010936;
+      }
+      .inputleft {
+        margin: 0 20px;
+        font-size: 20px;
+        color: gray;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .outputright {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 30px 0 0;
+        font-size: 16px;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: gray;
+      }
+      .graytext {
+        color: gray;
+        font-size: 16px;
+      }
+      .yellowbuttontext {
+        color: black;
+        font-size: 18px;
+        align-items: center;
+      }
+
+      /* footerbox done */
+
+      .loginContainer {
+        width: fit-content;
+        margin: auto;
+        background-color: white;
+        border-radius: 20px;
+        padding: 1%;
+      }
+      .loginContainer button {
+        background-color: rgb(243, 214, 83);
+        color: white;
+      }
+      .formContainer {
+        width: fit-content;
+        margin: auto;
+        background-color: white;
+        border-radius: 20px;
+        padding: 1%;
+      }
+      input,
+      button {
+        margin: 1%;
+      }
+      .formFooter {
+        font-size: 80%;
+      }
+      .signupForm input,
+      .loginForm input {
+        color: black !important;
+        border-radius: 15px;
+      }
+      .loginContainer button,
+      .formContainer button {
+        background-color: rgb(243, 214, 83);
+        border: 1px solid black;
+        color: black;
+        border-radius: 15px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      #auth input {
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="homepage-header">
+      <div class="location-div">
+        <!-- headerbar -->
+        <div class="content">
+          <div class="faasosLogo">
+            <img
+              class="logo"
+              src="https://assets.faasos.io/faasos_v2/faasosLogoBrand.svg"
+              alt="Logo"
+            />
+          </div>
+
+          <div class="userLogin">
+            <!-- break -->
+
+            <button class="userbtn" id="myImg1">
+              <p class="login">Login</p>
+            </button>
+
+            <div id="myModal1" class="modal1" style="display: none">
+              <div class="loginContainer">
+                <span class="close1">x</span>
+                <h2>Login</h2>
+                <div id="entry">
+                  <p>Enter your phone number to continue</p>
+                  <form class="loginForm">
+                    <input
+                      type="number"
+                      name="phone"
+                      placeholder="Phone number"
+                    />
+                    <button onclick="login()" id="logbtn">CONTINUE</button>
+                  </form>
+                </div>
+                <div id="auth" style="display: none">
+                  <p>Enter OTP to continue</p>
+                  <form class="otpForm">
+                    <input type="number" name="otp" placeholder="Enter OTP" />
+                    <button onclick="validate()" id="otpbtn">SUBMIT</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <!-- break -->
+
+            <button class="userbtn userbtn1" id="myImg2">
+              <p class="login login1">Sign Up</p>
+            </button>
+
+            <div id="myModal2" class="modal2" style="display: none">
+              <div class="formContainer">
+                <span class="close2">X</span>
+                <h2><i data-feather="chevron-left"></i>Sign Up</h2>
+                <p class="formHeader">
+                  Create an account with new phone number
+                </p>
+                <form class="signupForm">
+                  <input
+                    type="number"
+                    name="phoneNumber"
+                    placeholder="Phone Number"
+                  /><br />
+                  <input type="text" name="name" placeholder="Name" /><br />
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Email Address"
+                  /><br />
+                  <button onclick="createAC()" id="btnCreate">
+                    CREATE ACCOUNT
+                  </button>
+                </form>
+                <p class="formFooter">
+                  By creating an account, i accept the
+                  <a href="terms.html">Terms & Conditions</a>
+                </p>
+              </div>
+            </div>
+
+            <!-- ------------- -->
+          </div>
+        </div>
+        <h1 class="headtext">Surprises under wraps</h1>
+        <!-- headerbar finished -->
+        <div class="content2">
+          <div class="locateme">
+            <div class="whitespace">
+              <div class="inputleft">
+                <p class="graytext">Enter your location</p>
+              </div>
+            </div>
+            <div class="inputright">
+              <div class="outputright">
+                <div>
+                  <svg width="19px" height="19px" viewBox="0 0 16 16">
+                    <path
+                      fill="#CCC"
+                      d="M7.828.04c.25-.013.465.196.506.433l.007.08v1.135c.54.042 1.075.157 1.59.348 1.19.442 2.206 1.225 2.945 2.258.632.886 1.002 1.946 1.095 3.03h1.313c.287 0 .499.236.513.513.013.277-.247.513-.513.513H13.97c-.014.158-.034.315-.059.472-.373 2.48-2.37 4.555-4.822 5.05-.25.052-.502.087-.753.107l.004 1.08c0 .288-.236.5-.513.514-.277.013-.513-.247-.513-.513-.003-.524-.003-1.043-.007-1.567l.002.484c-.703-.06-1.396-.238-2.05-.532-1.125-.502-2.086-1.374-2.723-2.424-.486-.805-.783-1.73-.862-2.67L.561 8.35c-.288 0-.5-.236-.513-.513-.014-.277.246-.513.513-.513h1.116c.113-1.268.6-2.454 1.408-3.437 1.05-1.28 2.61-2.051 4.23-2.194V.553c0-.288.236-.5.513-.514zm-.11 2.658l-.232.006-.294.027c-.024 0-.048.003-.072.007.051-.007.058-.01.02-.004-.037.004-.078.01-.116.017-.061.01-.123.02-.184.034-.134.028-.27.062-.404.1-.14.037-.277.082-.414.133-.065.024-.126.051-.191.075l.017-.007c.031-.012-.043.02-.083.036l-.02.009c-.253.116-.499.253-.732.403-.12.079-.236.161-.348.247l.017-.014c.02-.011-.053.048-.09.076l-.016.013-.154.133c-.202.178-.387.373-.561.578-.027.034-.058.069-.086.103l-.012.014-.003.004-.056.075-.065.091c-.072.107-.144.213-.209.322-.075.123-.144.25-.209.376-.03.062-.061.123-.089.185-.013.027-.085.202-.047.106l-.098.256c-.062.173-.116.35-.159.527-.038.15-.068.301-.092.455l-.007.044v.002l-.002.004-.003.031-.002.015-.02.212c-.024.294-.024.591-.004.885.007.08.014.158.024.236v.012c.003.011.003.017.004.023v.004-.001l.001.01v.003l.002.011.01.058c.024.13.048.257.079.387.065.273.15.543.256.807l-.004-.012.004.012c.007.017.01.024.01.02l-.005-.011.002.004.014.031c.017.034.03.069.048.103.024.054.051.11.078.164.059.12.127.24.195.356.072.123.15.242.233.359.038.054.079.11.12.164l-.016-.021.006.009.055.068.013.016c.181.219.376.424.588.612.058.051.113.099.171.147l.063.05.02.017.15.11.167.114c.226.15.462.283.708.396.041.017.082.038.123.055l.013.006.011.004.192.072c.13.048.26.089.393.127.133.037.267.071.403.099.069.014.137.027.206.037.037.007.078.01.116.018l-.006-.002c.199.022.39.035.58.038h.053l.043-.006c.029-.001.057 0 .085.005l.107-.001c.16-.004.318-.017.475-.034l.014-.003.01-.001-.02.004.046-.007.046-.007c.075-.01.154-.024.229-.041.27-.055.537-.127.797-.222l.2-.08.1-.042.018-.008c.123-.059.243-.12.362-.185.243-.133.48-.287.698-.455-.082.062.082-.068.106-.089.048-.037.093-.075.137-.116.1-.092.198-.185.29-.28.1-.103.192-.21.285-.319l.077-.094.01-.01.049-.067.058-.082c.161-.229.305-.468.431-.715.035-.068.069-.136.1-.205l.042-.1.001-.002v.002l.005-.011c.001-.005.002-.005 0-.003l.063-.163.066-.195c.09-.27.154-.55.202-.83.007-.038.01-.08.017-.117l-.004.036.001-.015.001-.006.001-.008.001-.004.001-.012.003-.018.02-.212c.01-.144.017-.288.017-.431 0 .114.044.227.115.318-.069-.088-.11-.2-.115-.318v-.004l-.004-.21v-.21l-.023-.236-.003-.015-.002-.017v-.008l-.002-.006v-.004l-.007-.046c-.044-.28-.11-.558-.198-.831-.045-.137-.092-.274-.147-.407l.01.026c.008.023-.046-.109-.058-.132-.027-.062-.058-.123-.089-.185-.123-.24-.263-.472-.417-.694l-.134-.181.023.03-.008-.01-.02-.027-.012-.014-.071-.085c-.08-.1-.165-.192-.254-.284-.095-.103-.198-.199-.304-.294-.051-.048-.103-.09-.154-.134-.012-.012-.096-.078-.112-.091l-.196-.143c-.148-.103-.3-.199-.458-.286-.133-.075-.267-.143-.403-.205-.028-.013-.178-.075-.086-.037l-.096-.04-.095-.036c-.267-.099-.544-.174-.821-.232l-.23-.041-.077-.012-.007-.001-.016-.002-.02-.002c-.132-.014-.27-.024-.403-.031-.056-.003-.112-.004-.168-.005l-.078.012c-.038.002-.074-.002-.11-.01zm.103 1.615c1.946 0 3.524 1.578 3.524 3.524S9.767 11.36 7.82 11.36 4.298 9.783 4.298 7.837c0-1.946 1.577-3.524 3.523-3.524z"
+                    ></path>
+                  </svg>
+                </div>
+
+                <div><p class="graytext">Locate Me</p></div>
+              </div>
+
+              <div class="yellowbutton">
+                <p class="yellowbuttontext">FIND FOOD</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="image-div">
+        <img
+          class="image-div-image"
+          src="https://assets.faasos.io/faasos_v2/hero-banner.jpg"
+          alt="image"
+        />
+      </div>
+    </div>
+    <footer>
+      <div class="tablet2">
+        <h1>Eat Good, Eat Safe. Always! Now with the EatSure promise.</h1>
+        <p class="bottomline">
+          To keep your food safe and hygienic, here are some proactive steps
+          that we have been taking.
+        </p>
+        <div class="youtubecont">
+          <div class="cont1">
+            <ul>
+              <li class="line">
+                <svg class="svg" width="54px" height="54px" viewBox="0 0 54 54">
+                  <g fill="none">
+                    <path
+                      fill="#48358C"
+                      d="M42.481 53.788H11.52C5.27 53.788.212 48.725.212 42.481V11.52C.212 5.275 5.275.212 11.519.212H42.48c6.248 0 11.307 5.063 11.307 11.307V42.48c0 6.244-5.063 11.307-11.307 11.307z"
+                    ></path>
+                    <path
+                      fill="#F7D30B"
+                      d="M36.732 26.369c-.59 0-1.183-.092-1.765-.283l-7.909-2.567c-3.871-1.259-5.998-5.433-4.74-9.305l2.547-7.834c.203-.623.635-1.13 1.225-1.429.586-.299 1.255-.353 1.878-.15l15.689 5.102c.623.203 1.13.635 1.429 1.225.299.586.353 1.255.15 1.878l-3.041 9.217c-.42 1.5-1.404 2.73-2.775 3.464-.847.453-1.761.682-2.688.682zm-9.89-20.117c-.083 0-.15.024-.19.045-.06.03-.163.1-.209.237l-2.691 8.279c-.96 2.945.66 6.122 3.605 7.082l8.358 2.717c1 .324 2.06.228 2.99-.27.927-.499 1.591-1.334 1.87-2.347l.016-.054 3.224-9.762c.066-.208-.054-.444-.266-.515L26.967 6.268c-.046-.012-.087-.016-.125-.016z"
+                    ></path>
+                    <path
+                      fill="#FFF"
+                      d="M31.968 12.3c-.058 0-.116 0-.179-.005-2.093-.1-3.713-1.906-3.613-4.033.05-1.026.486-1.977 1.233-2.67.752-.699 1.724-1.056 2.742-1.006 2.093.1 3.713 1.906 3.614 4.033-.096 2.065-1.782 3.676-3.797 3.68zm.008-6.476c-.635 0-1.242.236-1.72.68-.506.47-.805 1.118-.838 1.816-.067 1.442 1.021 2.667 2.43 2.733 1.408.067 2.608-1.05 2.675-2.492.066-1.441-1.022-2.667-2.43-2.733-.038-.004-.08-.004-.117-.004zM40.965 13.679c-.058 0-.116 0-.178-.005-2.094-.1-3.714-1.906-3.614-4.033.05-1.026.486-1.977 1.233-2.67.752-.699 1.724-1.056 2.742-1.006 2.094.1 3.714 1.907 3.614 4.033-.092 2.065-1.778 3.68-3.797 3.68zm.009-6.476c-.636 0-1.242.237-1.72.681-.507.47-.806 1.117-.84 1.815-.066 1.442 1.023 2.667 2.43 2.733 1.409.067 2.61-1.05 2.676-2.492.066-1.441-1.022-2.667-2.43-2.733-.038-.004-.08-.004-.116-.004zM41.443 28.749c-2.343 4.918-8.997 4.644-11.029.012-.029.021-.058.038-.083.063-.05.05-.091.103-.137.157-1.167 1.388-1.753 2.995-1.757 4.806-.008 4.516-.004 3.872-.004 8.387 0 .673.191 1.296.61 1.828.599.76 1.38 1.15 2.385 1.167v-.411c0-1.359-.004-2.713.004-4.071.017-2.509 2.04-4.499 4.561-4.49 2.455.008 4.416 2.002 4.424 4.502.004 1.371 0 2.738 0 4.109v.373c.141-.008.22-.004.303-.016 1.628-.212 2.692-1.43 2.692-3.103.004-2.833.004-.499 0-3.332-.004-1.894.029-3.792-.058-5.682-.08-1.64-.785-3.057-1.911-4.3z"
+                    ></path>
+                    <path
+                      fill="#FFF"
+                      d="M38.897 43.682h.033c0-.843.008-1.682-.004-2.526-.004-.394-.004-.801-.092-1.184-.332-1.437-1.694-2.417-3.12-2.276-1.565.15-2.757 1.388-2.778 2.962-.03 2.035-.03 4.07 0 6.106.02 1.587 1.275 2.837 2.85 2.912 1.578.075 2.961-1.039 3.098-2.625.092-1.118.013-2.248.013-3.37zM35.952 31.698c-2.493-.008-4.49-2.023-4.49-4.524.003-2.434 2.047-4.47 4.485-4.46 2.513.008 4.532 2.03 4.495 4.548-.038 2.596-2.131 4.448-4.49 4.436zM43.79 26.697c-.154-.403-.598-.582-.997-.449-.474.158-.947.32-1.42.478-.395.133-.595.615-.45.997.154.403.599.581.998.448.473-.157.947-.32 1.42-.477.395-.133.594-.62.449-.997zM30.954 27.864c.021-.432-.32-.773-.739-.806-.498-.041-.997-.079-1.495-.12-.416-.034-.79.332-.806.74-.02.431.32.772.74.805.498.041.996.079 1.495.12.415.034.789-.332.805-.739z"
+                    ></path>
+                    <path
+                      fill="#F7D30B"
+                      stroke="#F7D30B"
+                      stroke-width=".954"
+                      d="M22.626 24.786c-.042-.636.033-1.338.158-1.96.05-.242.536-1.708.772-2.372.345.203.644.548 1.014.69.25.095.482.302.714.427-.365.698-.897 2.326-.905 2.908-.004.315.008.619.274.801.34.233.83.266 1.225.32.474.067.765.632.67 1.064-.113.502-.578.722-1.052.656-.685-.096-1.37-.254-1.94-.677-.594-.445-.88-1.126-.93-1.857z"
+                    ></path>
+                    <path
+                      fill="#48358C"
+                      d="M35.844 30.444c-1.7-.005-3.062-1.38-3.062-3.083 0-1.657 1.396-3.044 3.057-3.04 1.712.004 3.09 1.383 3.062 3.099-.025 1.77-1.45 3.032-3.057 3.024z"
+                    ></path>
+                    <path
+                      fill="#FCDD06"
+                      d="M35.723 29.492c-1.151-.003-2.077-.934-2.077-2.09 0-1.126.947-2.067 2.074-2.064 1.16.004 2.095.938 2.08 2.104-.019 1.197-.988 2.053-2.077 2.05z"
+                    ></path>
+                    <path
+                      fill="#FFF"
+                      d="M44.928 14.734c.278-.262-.137-.686-.415-.424-1.342 1.25-3.14 1.923-4.964 1.886-.07-.32-.39-.553-.677-.652l-4.586-1.65c-.499-.178-.885.046-1.076.4-.474.132-.926.31-1.358.519-2.53.253-5.068-.806-6.646-2.854-.462-.594-.827-1.271-1.085-1.977-.128-.358-.706-.22-.577.14 1.047 2.896 3.66 4.969 6.73 5.289.165.016.332.029.502.033-.939.656-1.728 1.512-2.314 2.53-2.45-.574-4.598-2.389-5.504-4.744-.058-.15-.187-.258-.357-.22-.141.033-.274.208-.22.357.984 2.555 3.215 4.495 5.844 5.155-.079.482.204.93.698 1.117 1.296.482 2.584.985 3.884 1.45 1.134.403 2.314.66 3.502.32.98-.283 1.753-.835 2.305-1.55.885.241 1.79.408 2.704.495.532.05 1.101.087 1.595-.162.424-.216.748-.673.702-1.163-.037-.378-.631-.395-.594-.013.042.432-.332.686-.714.756-.465.083-.976-.004-1.441-.062-.64-.079-1.272-.212-1.895-.374.424-.748.64-1.628.628-2.546 1.956.033 3.892-.715 5.329-2.056z"
+                    ></path>
+                    <g fill="#FCDD06">
+                      <path
+                        d="M3.884.1h.806l.253.062c1.313.295 2.14 1.562 2.135 2.663-.008 3.514-.054 7.028.03 10.542.003.141.032.253.136.361.777.79 1.172 1.75 1.184 2.85.017 1.184-.424 2.197-1.275 3.032-1.969 1.924-5.28 1.367-6.522-1.088-.228-.457-.353-.943-.448-1.437v-.927c.012-.058.029-.116.041-.174.142-.83.482-1.566 1.072-2.168.154-.158.216-.316.212-.532-.004-3.46-.008-6.92 0-10.385 0-.918.39-1.657 1.1-2.23.374-.312.819-.461 1.276-.57zm1.848 8.2V5.436c0-.889.009-1.773-.008-2.662-.012-.715-.66-1.383-1.508-1.325-.872.058-1.354.789-1.346 1.516.021 2.525.009 5.05.009 7.58v3.187c0 .315-.104.565-.35.772-.789.673-1.092 1.541-.946 2.559.19 1.358 1.483 2.463 3.007 2.31 1.072-.113 2.01-.856 2.347-1.907.332-1.039.017-2.23-.802-2.916-.286-.241-.407-.52-.403-.893.004-1.782 0-3.568 0-5.359z"
+                        transform="translate(11.215 6.23)"
+                      ></path>
+                      <path
+                        d="M4.98 10.958c0 1.325.005 2.646-.004 3.97 0 .192.05.317.216.433.752.515.885 1.524.312 2.251-.532.673-1.57.765-2.206.196-.681-.607-.723-1.645-.087-2.28.046-.047.095-.1.154-.13.24-.108.282-.295.282-.54-.008-2.604-.004-5.213-.004-7.817 0-.129-.013-.254.033-.378.112-.316.403-.486.752-.436.307.041.552.311.557.643.008.49.004.98.004 1.47-.009.87-.013 1.741-.009 2.618z"
+                        transform="translate(11.215 6.23)"
+                      ></path>
+                    </g>
+                    <path
+                      fill="#CE1317"
+                      d="M8.146 32.334H28.458000000000002V40.604H8.146z"
+                    ></path>
+                  </g>
+                </svg>
+
+                <p class="h6">
+                  <b> Real-time Temparature</b> Trackig of kitcheen and delivery
+                  staff
+                </p>
+              </li>
+              <li class="line">
+                <svg class="svg" width="54px" height="54px" viewBox="0 0 54 54">
+                  <g fill="none" fill-rule="evenodd">
+                    <path
+                      fill="#48358C"
+                      fill-rule="nonzero"
+                      d="M42.481 53.788H11.52C5.27 53.788.212 48.725.212 42.481V11.52C.212 5.275 5.275.212 11.519.212H42.48c6.248 0 11.307 5.063 11.307 11.307V42.48c0 6.244-5.063 11.307-11.307 11.307z"
+                    ></path>
+                    <path
+                      fill="#FFF"
+                      fill-rule="nonzero"
+                      stroke="#FFF"
+                      stroke-width=".609"
+                      d="M17.754 23.357C11.186 23.357 5.84 28.7 5.84 35.27c0 6.572 5.342 11.914 11.914 11.914 6.57 0 11.913-5.342 11.913-11.914 0-6.571-5.346-11.913-11.913-11.913zm0 22.369c-2.676 0-5.122-1.014-6.975-2.676l2.401-2.4c-.507-.291-.943-.694-1.267-1.18l-2.322 2.322c-1.433-1.79-2.293-4.058-2.293-6.526 0-5.765 4.69-10.455 10.456-10.455 2.467 0 4.735.86 6.525 2.293l-2.538 2.538c.374.507.623 1.105.698 1.749l3.099-3.1c1.661 1.853 2.675 4.296 2.675 6.975-.004 5.77-4.694 10.46-10.46 10.46z"
+                    ></path>
+                    <path
+                      fill="#F7D30B"
+                      fill-rule="nonzero"
+                      d="M47.62 22.398L45.16 9.786c-.348-1.782-2.08-2.949-3.862-2.6l-25.26 4.93c-1.782.35-2.95 2.082-2.6 3.868l1.516 7.593c.51-.278 1.088-.436 1.699-.436.133 0 .27.008.399.025l-1.517-7.597c-.12-.623.287-1.234.914-1.355l25.26-4.93c.075-.017.15-.02.22-.02.54 0 1.026.381 1.134.934l2.459 12.61c.935 4.782-2.197 9.434-6.978 10.365l-8.96 1.744c.207.453.324.951.324 1.475 0 .224-.025.44-.067.652l9.11-1.774c5.94-1.159 9.828-6.932 8.669-12.872z"
+                    ></path>
+                    <path
+                      stroke="#FFF"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M37.277 12.611h0c-2.152-.162-4.034 1.487-4.196 3.676h0c-.166 2.193 1.446 4.104 3.602 4.262h0c2.151.162 4.033-1.487 4.195-3.676h0c.162-2.193-1.45-4.1-3.601-4.262zM25.41 14.892h0c-2.153-.162-4.034 1.487-4.196 3.676h0c-.166 2.193 1.445 4.104 3.601 4.262h0c2.152.162 4.033-1.488 4.195-3.677h0c.162-2.189-1.45-4.1-3.6-4.261z"
+                    ></path>
+                    <path
+                      fill="#FCDD06"
+                      fill-rule="nonzero"
+                      stroke="#FCDD06"
+                      stroke-width=".6"
+                      d="M13.724 30.26c.237-.755.35-1.557.731-2.188.403-.665 1.139-.66 2.135-.245 1.296-1.25 2.036-1.255 3.132-.005 1.28-.444 2.01-.278 2.468.628.15.295.208.664.212 1 .02 1.92.008 3.835.008 5.916.494-.486.885-.872 1.284-1.259.847-.818 1.94-.872 2.679-.133.74.736.693 1.845-.146 2.675-1.935 1.928-3.825 3.905-5.844 5.737-1.628 1.474-3.622 1.72-5.633.86-2.052-.877-3.24-2.513-3.331-4.769-.087-2.18-.037-4.37-.03-6.555.005-1.296.919-2.006 2.165-1.715.1.025.195.062.17.054zm7.938 5.638v-2.505c0-1.4.034-2.8-.037-4.196-.017-.299-.357-.722-.644-.822-.253-.091-.71.104-.943.32-.183.17-.212.56-.22.851-.02 1.267.008 2.538-.025 3.805-.004.225-.216.445-.332.669-.117-.22-.328-.44-.333-.665-.029-1.507-.008-3.015-.02-4.527-.009-.769-.35-1.172-.94-1.176-.597 0-.905.386-.909 1.176-.004 1.508.013 3.02-.02 4.527-.005.22-.233.437-.358.657-.124-.216-.349-.428-.353-.648-.033-1.313-.012-2.626-.02-3.934-.005-.727-.325-1.122-.898-1.138-.598-.017-.947.399-.951 1.15-.008 1.355 0 2.713-.004 4.067 0 .461.025.922-.017 1.375-.012.15-.208.278-.316.42-.124-.125-.299-.229-.365-.378-.067-.15-.03-.345-.033-.52-.004-.876 0-1.748-.013-2.625-.008-.573-.345-.914-.897-.922-.528-.013-.84.324-.91.851-.025.175-.029.35-.029.524 0 1.857-.012 3.718.009 5.574.004.52.041 1.055.178 1.554 1.014 3.672 5.238 4.822 8.042 2.16 1.84-1.745 3.601-3.572 5.392-5.371.556-.56.594-1.234.128-1.678-.448-.428-1.08-.378-1.628.153-.565.549-1.1 1.13-1.682 1.658-.191.17-.482.307-.735.32-2.692.116-4.092 1.346-4.524 3.967-.033.19-.29.344-.44.515-.096-.196-.283-.395-.266-.582.104-1.387.669-2.559 1.749-3.464.95-.794 2.064-1.11 3.364-1.142z"
+                    ></path>
+                    <path
+                      fill="#FFF"
+                      fill-rule="nonzero"
+                      d="M36.122 25.264c-1.33 1.134-2.704 2.239-4.528 1.607-1.54-.536-2.226 1.899-.694 2.43 2.725.947 4.98-.519 6.991-2.235 1.242-1.055-.535-2.857-1.77-1.802z"
+                    ></path>
+                  </g>
+                </svg>
+                <p class="h6"><b> Contactless Delivery </b></p>
+              </li>
+              <li class="line">
+                <svg class="svg" width="54px" height="54px" viewBox="0 0 54 54">
+                  <g fill="none">
+                    <path
+                      fill="#48358C"
+                      d="M42.481 53.788H11.52C5.27 53.788.212 48.725.212 42.481V11.52C.212 5.275 5.275.212 11.519.212H42.48c6.248 0 11.307 5.063 11.307 11.307V42.48c0 6.244-5.063 11.307-11.307 11.307z"
+                    ></path>
+                    <g>
+                      <path
+                        fill="#F7D30B"
+                        d="M29.334 18.003l-1.74-13.75c-.108-.814-.523-1.536-1.18-2.039-.652-.503-1.458-.719-2.272-.615L.798 4.661c-.146.02-.283.05-.42.087.623.22 1.134.598 1.562 1.238.12.182.183.39.19.606l22.282-2.92c.042-.004.087-.008.129-.008.216 0 .424.07.602.207.212.162.345.395.378.648l1.745 13.77.008.05c.27 1.516-.083 3.037-.993 4.279s-2.251 2.04-3.78 2.239l-11.767 1.549c-3.801.498-7.34-1.765-8.586-5.234-.009.686-.017 1.37-.017 2.06 0 .553-.262.935-.623 1.151 1.86 2.563 4.88 4.183 8.179 4.183.436 0 .876-.03 1.32-.087l11.769-1.55c2.097-.274 3.942-1.366 5.192-3.073 1.242-1.704 1.728-3.78 1.366-5.853z"
+                        transform="translate(19.938 13.292)"
+                      ></path>
+                      <path
+                        fill="#FFF"
+                        d="M12.74 11.12c-.706 0-1.417-.141-2.094-.424-1.341-.56-2.396-1.616-2.966-2.97-.569-1.354-.585-2.845-.05-4.2.54-1.358 1.575-2.417 2.912-2.982 1.338-.565 2.817-.56 4.167.004 1.341.561 2.397 1.616 2.966 2.97 1.175 2.8-.108 6.02-2.867 7.178-.66.287-1.366.424-2.068.424zm-.12-9.218c-.47 0-.944.096-1.388.283-.897.378-1.59 1.088-1.952 2.002-.366.918-.353 1.932.033 2.854.797 1.898 2.957 2.808 4.81 2.027 1.857-.781 2.717-2.958 1.915-4.856-.386-.922-1.105-1.64-2.015-2.023-.452-.191-.93-.287-1.404-.287zM26.045 14.646c-.707 0-1.417-.14-2.094-.423-1.342-.561-2.397-1.616-2.966-2.97-1.175-2.8.108-6.02 2.866-7.178 1.338-.56 2.817-.56 4.167.004 1.341.56 2.396 1.616 2.966 2.97.569 1.354.585 2.845.05 4.2-.54 1.358-1.575 2.417-2.912 2.982-.67.274-1.371.415-2.077.415zm-1.508-8.939c-1.857.781-2.717 2.958-1.915 4.856.386.922 1.105 1.641 2.014 2.023.906.378 1.899.382 2.796.004.897-.378 1.59-1.088 1.952-2.002.366-.918.353-1.931-.033-2.854-.797-1.898-2.957-2.808-4.814-2.027zM14.364 21.62c-1.686 0-3.356-.456-4.852-1.34-2.189-1.301-3.738-3.37-4.365-5.82-.15-.59.207-1.193.797-1.342.59-.15 1.192.208 1.342.797.478 1.882 1.67 3.469 3.352 4.466 1.682 1 3.647 1.287 5.529.806.59-.15 1.192.207 1.341.797.15.59-.207 1.192-.797 1.342-.773.2-1.562.295-2.347.295z"
+                        transform="translate(19.938 13.292)"
+                      ></path>
+                    </g>
+                    <path
+                      fill="#FFF"
+                      d="M22.7 19.423l-4.34-4.345c-.137-.137-.32-.211-.51-.211H6.26c-.399 0-.723.324-.723.722v21.725c0 .399.324.723.723.723h15.93c.399 0 .723-.324.723-.723V19.938c.004-.195-.075-.378-.212-.515zm-4.128-2.085l1.873 1.874h-1.873v-1.874zm2.895 19.253H6.987V16.316h10.135v3.622c0 .4.324.723.723.723h3.622v15.93z"
+                    ></path>
+                    <path
+                      fill="#FFF"
+                      d="M9.882 25.006H11.331999999999999V26.456H9.882zM12.777 25.006H18.572V26.456H12.777zM9.882 28.624H11.331999999999999V30.073999999999998H9.882zM12.777 28.624H18.572V30.073999999999998H12.777zM9.882 32.246H11.331999999999999V33.696000000000005H9.882zM12.777 32.246H18.572V33.696000000000005H12.777zM11.328 19.938L11.328 18.489 9.882 18.489 9.882 19.938 8.432 19.938 8.432 21.384 9.882 21.384 9.882 22.834 11.328 22.834 11.328 21.384 12.777 21.384 12.777 19.938z"
+                    ></path>
+                  </g>
+                </svg>
+
+                <p class="h6">
+                  <b> Regular health</b> check-ups for all the staff members
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="cont2">
+            <iframe
+              src="https://www.youtube.com/embed/SBGKA87fmCM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+      <br />
+      <div class="tablet3">
+        <div class="hexagon">
+          <div class="boxx">
+            <img
+              src="https://assets.faasos.io/faasos_v2/esSafetyLogo.svg"
+              alt="eatsure_safety"
+            />
+          </div>
+
+          <div class="boxxcontainer">
+            <hr />
+            <div class="boxx1">
+              <p class="tickmark">✔</p>
+              <p class="ticks">Medically Certified Staff</p>
+            </div>
+            <hr />
+            <div class="boxx2">
+              <p class="tickmark">✔</p>
+              <p class="ticks">200+ Stringent Quality Checks</p>
+            </div>
+
+            <hr />
+
+            <div class="boxx3">
+              <p class="tickmark">✔</p>
+              <p class="ticks">No Artificial Colours or Flavours</p>
+            </div>
+            <hr />
+            <div class="boxx4">
+              <p class="tickmark">✔</p>
+              <p class="ticks">Double Sealed Packaging</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="tablet4">
+        <div class="grid0">
+          Here are some additional measures which our kitchen teams are
+          rigorously following!
+        </div>
+
+        <div id="flexbox">
+          <div class="grid1">
+            <div class="div1">
+              <img
+                class="png"
+                src="https://assets.faasos.io/faasos_v2/mask1.svg"
+                alt="image"
+              />
+            </div>
+            <div class="div2">
+              <p class="text">Using masks all the time.</p>
+            </div>
+          </div>
+          <div class="grid1">
+            <div class="div1">
+              <img
+                class="png"
+                src="https://assets.faasos.io/faasos_v2/staff2.svg"
+                alt="image"
+              />
+            </div>
+            <div class="div2">
+              <p class="text">
+                Maintaining a log of kitchen staff’s body temperature.
+              </p>
+            </div>
+          </div>
+          <div class="grid1">
+            <div class="div1">
+              <img
+                class="png"
+                src="https://assets.faasos.io/faasos_v2/safety3.svg"
+                alt="image"
+              />
+            </div>
+            <div class="div2">
+              <p class="text">Using handwash frequently to clean hands.</p>
+            </div>
+          </div>
+          <div class="grid1">
+            <div class="div1">
+              <img
+                class="png"
+                src="https://assets.faasos.io/faasos_v2/kitchenSurface4.svg"
+                alt="image"
+              />
+            </div>
+            <div class="div2">
+              <p class="text">
+                Sanitising all the kitchen surfaces, every 4 hours.
+              </p>
+            </div>
+          </div>
+          <div class="grid1">
+            <div class="div1">
+              <img
+                class="png"
+                src="https://assets.faasos.io/faasos_v2/delivery_5.png"
+                alt="image"
+              />
+            </div>
+            <div class="div2">
+              <p class="text">
+                Delivering food in an enclosed sealed package to avoid
+                contamination.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footerbox">
+        <div class="contentbox">
+          <div class="apnacontent">
+            <br />
+            <div class="citiesbox">
+              <p class="heading">Cities we deliver to</p>
+              <div class="cityy"><p>Pune</p></div>
+              <div class="cityy"><p>Mumbai</p></div>
+              <div class="cityy"><p>Bangalore</p></div>
+
+              <div class="cityy"><p>Noida</p></div>
+              <div class="cityy"><p>Gurgaon</p></div>
+              <div class="cityy"><p>New Delhi</p></div>
+              <div class="cityy"><p>Hyderabad</p></div>
+              <div class="cityy"><p>Chennai</p></div>
+              <div class="cityy"><p>Indore</p></div>
+              <div class="cityy"><p>Nagpur</p></div>
+              <div class="cityy"><p>Faridabad</p></div>
+              <div class="cityy"><p>Ahmedabad</p></div>
+              <div class="cityy"><p>Ghaziabad</p></div>
+              <div class="cityy"><p>Coimbatore</p></div>
+              <div class="cityy"><p>Dubai</p></div>
+              <div class="cityy"><p>Vadodra</p></div>
+              <div class="cityy"><p>Bhopal</p></div>
+              <div class="cityy"><p>Kolkata</p></div>
+              <div class="cityy"><p>Surat</p></div>
+              <div class="cityy"><p>Mysore</p></div>
+              <div class="cityy"><p>Pondicherry</p></div>
+              <div class="cityy"><p>Nashik</p></div>
+              <div class="cityy"><p>Jaipur</p></div>
+              <div class="cityy"><p>Panchukla</p></div>
+              <div class="cityy"><p>Mohali</p></div>
+              <div class="cityy"><p>Chandigarh</p></div>
+              <div class="cityy"><p>Vijaywada</p></div>
+              <div class="cityy"><p>Vellore</p></div>
+              <div class="cityy"><p>Zirakpur</p></div>
+              <div class="cityy"><p>Lucknow</p></div>
+              <div class="cityy"><p>Kochi</p></div>
+              <div class="cityy"><p>Vizag</p></div>
+              <div class="cityy"><p>Tirupati</p></div>
+              <div class="cityy"><p>Trippur</p></div>
+              <div class="cityy"><p>Kota</p></div>
+              <div class="cityy"><p>Many more...</p></div>
+
+              <div class="space"></div>
+            </div>
+            <div class="legal_contact">
+              <div class="city37">
+                <p class="heading">Legal</p>
+                <button class="btn">
+                  <p>
+                    <a class="href1" href="https://www.faasos.com/terms"
+                      >Terms & Conditions</a
+                    >
+                  </p></button
+                ><button class="btn">
+                  <p>
+                    <a class="href1" href="privacyPolicy.html"
+                      >Privacy Policy</a
+                    >
+                  </p>
+                </button>
+              </div>
+              <div class="city38">
+                <p class="heading">Contact</p>
+                <button class="btn">
+                  <p>
+                    <a class="href1" href="mailto:feasts@faasos.com"
+                      ><svg
+                        class="mail"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="12"
+                        height="12"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="3"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      >
+                        <path
+                          d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                        ></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </svg>
+                      crm@faasos.com</a
+                    >
+                  </p>
+                </button>
+              </div>
+              <div class="space"></div>
+            </div>
+            <hr />
+            <div class="citiesbox1">
+              <div class="left">2020 @ Faasos. All rights reserved</div>
+              <div class="right">
+                <p>Follow us on</p>
+                <a
+                  href="https://www.facebook.com/Faasos"
+                  class="fa fa-facebook"
+                ></a>
+                <a href="https://twitter.com/faasos" class="fa fa-twitter"></a
+                ><a
+                  href="https://www.instagram.com/faasos/"
+                  class="fa fa-instagram"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
+<script>
+  // Get the modal
+  var modal1 = document.getElementById("myModal1");
+
+  var modal2 = document.getElementById("myModal2");
+
+  // Get the image and insert it inside the modal - use its "alt" text as a captions1
+  var img1 = document.getElementById("myImg1");
+  var img2 = document.getElementById("myImg2");
+
+  // var captionText = document.getElementById("captions1");
+  img1.onclick = function () {
+    modal1.style.display = "block";
+    // modalImg.src = this.src;
+    // captionText.innerHTML = this.alt;
+  };
+  img2.onclick = function () {
+    modal2.style.display = "block";
+    //   // modalImg.src = this.src;
+    //   // captionText.innerHTML = this.alt;
+  };
+
+  // Get the <span> element that closes the modal
+  var span1 = document.getElementsByClassName("close1")[0];
+  var span2 = document.getElementsByClassName("close2")[0];
+
+  // When the user clicks on <span> (x), close the modal
+  span1.onclick = function () {
+    modal1.style.display = "none";
+  };
+  span2.onclick = function () {
+    modal2.style.display = "none";
+  };
+</script>
+<script>
+  document.getElementById("logbtn").addEventListener("click", function (e) {
+    e.preventDefault();
+  });
+  document.getElementById("otpbtn").addEventListener("click", function (e) {
+    e.preventDefault();
+  });
+
+  let otp = Math.trunc(Math.random() * 100000);
+
+  function validate() {
+    let otpForm = document.getElementsByClassName("otpForm")[0];
+    let otpEntered = otpForm.otp.value;
+
+    if (otpEntered == otp) {
+      alert("Authorised");
+      window.location.href = "menuF.html";
+    } else {
+      alert("Wrong OTP entered. Re-enter the right one");
+    }
+  }
+
+  function login() {
+    let userDetails = JSON.parse(localStorage.getItem("users"));
+
+    let liForm = document.getElementsByClassName("loginForm")[0];
+
+    let phone = liForm.phone.value;
+
+    for (let i = 0; i < userDetails.length; i++) {
+      if (userDetails[i].phone == phone) {
+        alert("User Found");
+        document.getElementById("entry").style.display = "none";
+        document.getElementById("auth").style.display = "inline";
+
+        setTimeout(() => {
+          alert(`OTP is ${otp}`);
+        }, 2000);
+
+        break;
+      }
+    }
+  }
+</script>
+<script>
+  document
+    .querySelector("#btnCreate")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+    });
+
+  function createAC() {
+    let suForm = document.getElementsByClassName("signupForm")[0];
+
+    let phone = suForm.phoneNumber.value;
+    let name = suForm.name.value;
+    let email = suForm.email.value;
+
+    let profile = {
+      phone,
+      name,
+      email,
+    };
+
+    let users;
+
+    users = localStorage.getItem("users");
+
+    if (users == null) {
+      users = [];
+    } else {
+      users = JSON.parse(localStorage.getItem("users"));
+    }
+
+    users.push(profile);
+
+    localStorage.setItem("users", JSON.stringify(users));
+    alert("Registered Succesfully");
+    // window.location.href = 'login.html'
+  }
+</script>
+<script>
+  feather.replace();
+</script>

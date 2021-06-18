@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="faviconFaasos.png" />
+
+    <title>Checkout</title>
+    <style type="text/css">
+      * {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      /* nav bar  starting below*/
+
+      body {
+        margin: 0;
+        background: rgb(245, 245, 246);
+      }
+      .header,
+      .content,
+      button,
+      .userLogin {
+        display: flex;
+      }
+
+      .header {
+        box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
+        background-color: white;
+        position: relative;
+        z-index: 2;
+      }
+      .userLogin {
+        width: 26%;
+        justify-content: flex-end;
+      }
+      .userbtn {
+        padding-right: 15px;
+      }
+      .home {
+        padding: 0 8px 1vw 1vw;
+      }
+      .content {
+        width: 100%;
+        justify-content: space-between;
+        box-sizing: border-box;
+        max-width: 1170px;
+        padding: 1.5vw 1vw;
+        margin: auto;
+      }
+
+      button {
+        background-color: white;
+        border: none;
+      }
+      .logo {
+        width: 80px;
+        height: 40px;
+      }
+
+      .login {
+        margin-top: 5px;
+        color: rgb(44, 56, 110);
+        font-family: "Roboto", sans-serif;
+        font-weight: bolder;
+      }
+
+      svg {
+        fill: rgb(44, 56, 110);
+        stroke: rgb(44, 56, 110);
+        stroke-width: "2";
+      }
+      @media screen and (max-width: 768px) {
+        .content {
+          margin: 0vw 0vw;
+        }
+      }
+      /* nav bar ended */
+
+      .btn {
+        background-color: rgb(255, 211, 68);
+        color: black;
+        font-weight: 600;
+        justify-content: center;
+
+        padding: 12px;
+        margin: 10px auto;
+        border: none;
+        width: 100%;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 17px;
+        box-shadow: 0 0 1rem 0 rgba(99, 123, 150, 0.329);
+      }
+
+      .btn:hover {
+        background-color: rgb(252, 173, 2);
+      }
+
+      a {
+        color: green;
+      }
+
+      .whatsapp {
+        display: flex;
+        flex-direction: row;
+        background-color: #dfeeee;
+        border-radius: 15px;
+        box-sizing: border-box;
+        padding: 20px 0 0 20px;
+        /* align-items: flex-start; */
+      }
+      .whatsapptext {
+        margin-left: 5px;
+        width: 95%;
+      }
+
+      h5 {
+        margin: 0;
+      }
+
+      svg {
+        width: 70px;
+        height: 40px;
+        margin-top: 0px;
+      }
+      .eatsuretext {
+        margin: 10px 0;
+        font-size: 13px;
+        line-height: 0.1cm;
+      }
+      .ordersummary {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+      }
+      .dishname {
+        display: flex;
+        justify-content: flex-end;
+        width: 34%;
+      }
+      .qty {
+        width: 46%;
+        display: flex;
+        flex-direction: row;
+        margin: 13px 0;
+      }
+      .price {
+        width: 20%;
+        margin: 13px 0;
+      }
+      .qty {
+        justify-content: center;
+      }
+      .dishname p,
+      .clickleft {
+        font-size: 13px;
+      }
+      .nonvegsymole {
+        width: 10px;
+        height: 10px;
+      }
+      .clickleft {
+        width: 33px;
+        height: 31px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: rgb(0 0 0 / 12%) 0px 4px 8px 0px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(252, 194, 5);
+        outline: none;
+        font-size: 1.6rem;
+        border-radius: 4px;
+        padding: 0px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        transform: rotateY(30deg);
+      }
+      .clickright {
+        width: 33px;
+        height: 31px;
+        display: flex;
+        flex-direction: row;
+        box-shadow: rgb(0 0 0 / 12%) 0px 4px 8px 0px;
+        background-color: rgb(255, 255, 255);
+        border: 1px solid rgb(252, 194, 5);
+        outline: none;
+        font-size: 1.6rem;
+        border-radius: 4px;
+        transform: rotateY(-30deg);
+        padding: 0px;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+      }
+      .clickleft,
+      .clickright {
+        position: relative;
+        cursor: pointer;
+      }
+      .coupondiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .couponsign {
+        width: 20px;
+        height: 20px;
+      }
+      h4 {
+        margin: 40px 0 20px 0;
+      }
+      .coupondiv {
+        border: 1px solid rgb(226, 221, 221);
+        padding: 25px;
+        justify-content: space-between;
+      }
+      .arrow {
+        width: 10px;
+        height: 10px;
+        margin-top: 5px;
+      }
+      hr {
+        color: gray;
+        margin: 15px 0;
+      }
+      .carttotal {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 10px 30px;
+      }
+      .amount,
+      .taxation,
+      .deliverycharge,
+      .totalbill {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      p,
+      .price {
+        margin: 2px;
+      }
+      .roundtick {
+        position: absolute;
+        font-size: 1.8rem;
+        width: 40px;
+        height: 40px;
+        display: block;
+        padding: 0.6rem;
+        border-radius: 50%;
+        text-align: center;
+        border: 1px solid rgb(224, 224, 224);
+      }
+
+      .addnew,
+      .savedaddress {
+        padding: 20px 40px;
+        border-radius: 15px;
+        margin: 0 20px 20px 20px;
+        border: 2px dashed rgb(255, 211, 68);
+      }
+      .cart-button1,
+      .cart-button2,
+      .cart-button3 {
+        display: inline-flex;
+        padding: 0.9rem 1.8rem;
+        border: 1px solid transparent;
+        box-shadow: rgba(0, 0, 0, 0.12) 0px 4px 8px 0px;
+        width: 100%;
+        margin: auto;
+        background-color: rgb(250, 200, 35);
+        color: rgb(51, 51, 51);
+        position: relative;
+        cursor: pointer;
+        height: 2rem;
+        border-radius: 0.4rem;
+        align-items: center;
+        font-size: 0.9rem;
+        font-weight: 700;
+
+        justify-content: center;
+      }
+      .cart-button2,
+      .cart-button3 {
+        background-color: rgb(238, 238, 158);
+      }
+      .cart-button3 {
+        width: 150px;
+      }
+
+      .address,
+      .payment {
+        display: flex;
+        flex-direction: column;
+      }
+      .addressinput {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+      }
+      .roundtickh2 {
+        margin: 0 0 20px 60px;
+      }
+      /* style of enter adress form started */
+      .fullpage {
+        font-family: Arial;
+        font-size: 17px;
+        padding: 8px;
+        max-width: 1170px;
+        margin: auto;
+      }
+      h2 {
+        text-align: left;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .col-75 {
+        width: 100%;
+      }
+
+      .layout {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        margin: 10px auto;
+      }
+
+      .rightcolumn {
+        width: 40%;
+      }
+
+      .columncss {
+        width: 50%;
+        flex: 50%;
+      }
+
+      .leftbartext {
+        width: 60%;
+      }
+
+      .rightcolumn,
+      .columncss,
+      .leftbartext {
+        padding: 0 16px;
+      }
+
+      .container {
+        background-color: #ffffff;
+        padding: 18px;
+        border: 1px solid lightgrey;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 1rem 0 rgba(168, 180, 194, 0.37);
+      }
+      .function1 {
+        width: 80%;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid rgb(252, 194, 5);
+        border-radius: 10px;
+      }
+
+      label {
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+      }
+
+      hr {
+        border: 1px solid lightgrey;
+      }
+
+      span.price {
+        float: right;
+        color: grey;
+      }
+
+      /* style of enter adress form ended */
+      @media (max-width: 800px) {
+        .layout {
+          flex-direction: column-reverse;
+        }
+        .rightcolumn {
+          margin-bottom: 20px;
+        }
+      }
+      #checkout1,
+      #checkout3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #checkout2Container {
+        margin-top: 5%;
+        background-color: rgb(245, 245, 246);
+        border-radius: 15px;
+        padding: 10px;
+      }
+      #checkout2 {
+        /* border-bottom: 1px solid grey; */
+        margin-top: 5px;
+        margin-bottom: 5px;
+      }
+      #checkout2RightContainer {
+        border-radius: 15px;
+        background: rgb(225, 225, 236);
+        /* background: rgb(156, 156, 156, 0.25); */
+        padding: 0 5px;
+        box-shadow: rgba(0, 0, 0, 0.12);
+      }
+      #checkout2,
+      #checkout2Left,
+      #checkout2Right,
+      #checkout2Middle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 5px;
+        margin: 0;
+      }
+      #checkout2Middle {
+        margin: 0;
+      }
+      #checkout2Middle h4 {
+        padding: 5px;
+        margin: 0;
+      }
+      #checkout3Left span {
+        font-size: 75%;
+        color: grey;
+      }
+      #checkout3Left h3 {
+        margin: 0;
+      }
+      #checkout4 button {
+        width: 100%;
+        height: 50px;
+        background: #ffd344;
+        box-shadow: rgb(110, 110, 110) 1.5px 1.5px 10px;
+        border-radius: 15px;
+        border: none;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-weight: bolder;
+      }
+      .rightcolumn {
+        position: sticky;
+        top: 1%;
+        min-width: 235px;
+        height: fit-content;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar started -->
+
+    <div class="header">
+      <div class="content">
+        <div class="faasosLogo">
+          <img
+            class="logo"
+            src="https://assets.faasos.io/faasos_v2/faasosLogoPurple.svg"
+            alt="Logo"
+          />
+        </div>
+
+        <div class="userLogin">
+          <button class="userbtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="24">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <p class="login">Login</p>
+          </button>
+          <button class="home">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout fullpage">
+      <!-- navbar ened -->
+      <div class="leftbartext">
+        <div class="container">
+          <div class="address">
+            <span class="roundtick"></span>
+            <h2 class="roundtickh2">Delivery Address</h2>
+            <div class="addressinput">
+              <div class="addnew">
+                <h4>Add your Address</h4>
+                <button class="cart-button1">ADD</button>
+                <div id="function1"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="address">
+            <span class="roundtick"></span>
+            <h2 class="roundtickh2">Payment</h2>
+            <div class="addressinput">
+              <div class="addnew">
+                <h4>GO FOR PAYMENT</h4>
+                <button class="cart-button2" onclick="alert()" disabled>
+                  PAY
+                </button>
+                <div id="function2"></div>
+                <h5>
+                  or
+                  <a
+                    href="https://test.payumoney.com/url/WI7ryuzJRe1Y"
+                    target="_blank"
+                    >click here</a
+                  >
+                  to pay
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="address">
+            <span class="roundtick"></span>
+            <h2 class="roundtickh2">Submit your food order below</h2>
+            <button class="cart-button3" onclick="submitOrder()">SUBMIT</button>
+          </div>
+        </div>
+      </div>
+      <div class="rightcolumn">
+        <div class="container">
+          <h3>Order Summary</h3>
+          <div class="whatsapp">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="29"
+              height="29"
+              fill="none"
+              viewBox="0 0 29 29"
+            >
+              <path
+                fill="#54965E"
+                d="M14.504 0h-.008C6.501 0 0 6.503 0 14.5c0 3.172 1.022 6.112 2.76 8.499L.953 28.386l5.574-1.782C8.82 28.123 11.555 29 14.504 29 22.499 29 29 22.495 29 14.5S22.499 0 14.504 0z"
+              ></path>
+              <path
+                fill="#fff"
+                d="M23.203 20.629c-.351.968-1.745 1.772-2.857 2.006-.761.158-1.755.284-5.1-1.07-4.279-1.73-7.034-5.977-7.249-6.252-.206-.276-1.729-2.248-1.729-4.289 0-2.04 1.061-3.033 1.489-3.46.351-.35.932-.51 1.489-.51.18 0 .342.01.487.016.428.018.643.043.925.702.351.827 1.207 2.867 1.309 3.077.103.21.207.494.061.77-.136.284-.256.41-.471.651-.215.242-.419.427-.633.686-.197.226-.419.468-.171.885.247.41 1.102 1.772 2.362 2.867 1.625 1.413 2.943 1.864 3.414 2.056.351.143.77.109 1.027-.158.325-.343.728-.912 1.137-1.471.291-.402.659-.452 1.045-.31.393.134 2.473 1.138 2.9 1.346.429.21.71.309.814.485.102.176.102 1.002-.249 1.973z"
+              ></path>
+            </svg>
+            <div class="whatsapptext">
+              <h5>Get Wrapped with Eat sure promise</h5>
+              <p class="eatsuretext">
+                Track your order, Get safety updates, Besure about your fassos
+                wraps with &nbsp;
+                <svg
+                  width="48"
+                  height="20"
+                  fill="none"
+                  viewBox="0 0 140 25"
+                  class="eatsurelogo"
+                  style="vertical-align: middle; margin-left: 2px"
+                >
+                  <path
+                    fill="#542775"
+                    d="M134.8 7.493V5.03h-.888v-.679h2.597v.681h-.888v2.462h-.821v-.002zm2.142 0V4.352h.638l.973 1.944h-.149l.986-1.944h.61v3.143h-.703v-1.91l.113.017-.682 1.354h-.512l-.687-1.354.128-.016v1.907h-.715zM64.293 21.803l1.776-3.988c1.64 1.103 4.134 1.85 6.389 1.85 2.46 0 3.382-.675 3.382-1.742 0-3.133-11.102.072-11.102-7.582 0-3.63 3.143-6.193 8.505-6.193 2.528 0 5.328.606 7.07 1.673l-1.775 3.95c-1.81-1.067-3.622-1.423-5.295-1.423-2.391 0-3.416.783-3.416 1.78 0 3.275 11.102.108 11.102 7.652 0 3.56-3.176 6.089-8.677 6.089-3.107 0-6.25-.89-7.959-2.066zM100.89 4.434v19.15h-5.056v-2.277c-1.4 1.673-3.45 2.564-5.704 2.564-4.613 0-7.858-2.707-7.858-8.615V4.434H87.6v10.001c0 3.205 1.367 4.627 3.724 4.627 2.461 0 4.237-1.639 4.237-5.16V4.434h5.329zM115.404 4.147v5.126c-.446-.035-.786-.073-1.197-.073-2.937 0-4.886 1.674-4.886 5.34v9.041h-5.331V4.431h5.092v2.527c1.3-1.85 3.488-2.81 6.322-2.81zM134.472 15.573h-13.905c.512 2.384 2.461 3.843 5.261 3.843 1.949 0 3.349-.606 4.613-1.85l2.836 3.202c-1.709 2.03-4.27 3.097-7.583 3.097-6.355 0-10.489-4.165-10.489-9.859 0-5.728 4.201-9.859 9.805-9.859 5.397 0 9.565 3.774 9.565 9.932 0 .426-.067 1.032-.103 1.494zM120.5 12.335h9.053c-.376-2.419-2.119-3.985-4.51-3.985-2.425-.003-4.167 1.529-4.543 3.985z"
+                  ></path>
+                  <path
+                    fill="#F4772D"
+                    fill-rule="evenodd"
+                    d="M53.244 23.698c-.714.238-1.46.357-2.236.357-1.704 0-3.02-.47-3.947-1.41s-1.39-2.248-1.39-3.927V5.9h-3.608V4.285h3.608V0h1.879v4.285h6.24V5.9h-6.24V18.53c0 1.278.307 2.249.92 2.913.615.664 1.523.996 2.726.996 1.228 0 2.242-.363 3.044-1.09l.79 1.315c-.477.451-1.072.796-1.786 1.034zm-43.133.357c1.503 0 2.9-.276 4.19-.827 1.29-.551 2.362-1.34 3.214-2.368l-1.09-1.24c-.727.902-1.635 1.585-2.725 2.048-1.09.464-2.274.696-3.552.696-1.553 0-2.95-.326-4.19-.978-1.241-.651-2.224-1.572-2.951-2.762-.727-1.19-1.115-2.55-1.165-4.078h16.876l.037-.526c0-1.905-.407-3.609-1.221-5.112-.814-1.504-1.93-2.675-3.345-3.514-1.416-.84-3.013-1.26-4.793-1.26-1.779 0-3.382.426-4.81 1.278-1.429.852-2.55 2.036-3.364 3.552C.407 10.48 0 12.19 0 14.094c0 1.93.432 3.647 1.297 5.15.864 1.503 2.06 2.681 3.59 3.533 1.528.852 3.27 1.278 5.224 1.278zm6.806-10.976H1.883c.1-1.403.482-2.662 1.146-3.777.664-1.115 1.548-1.98 2.65-2.594 1.103-.614 2.343-.92 3.721-.92 1.378 0 2.619.313 3.721.94 1.103.626 1.992 1.49 2.669 2.593.676 1.102 1.052 2.355 1.127 3.758zm16.108 10.018c-1.203.639-2.644.958-4.323.958-2.18 0-3.902-.514-5.168-1.541-1.265-1.027-1.898-2.38-1.898-4.06 0-1.628.583-2.95 1.748-3.965 1.165-1.014 3.026-1.522 5.581-1.522h6.728V11.39c0-1.83-.494-3.22-1.484-4.172-.99-.953-2.437-1.429-4.341-1.429-1.303 0-2.55.226-3.74.677-1.19.45-2.199 1.052-3.026 1.804l-.94-1.353c.978-.877 2.155-1.56 3.534-2.049 1.378-.488 2.819-.733 4.322-.733 2.43 0 4.297.62 5.6 1.861 1.303 1.24 1.955 3.063 1.955 5.469v12.44h-1.804V20.41c-.627 1.153-1.541 2.049-2.744 2.688zm-4.052-.582c-1.729 0-3.07-.37-4.022-1.11-.952-.738-1.428-1.747-1.428-3.025 0-1.228.432-2.192 1.297-2.894.864-.702 2.261-1.052 4.19-1.052h6.691v3.683c-.576 1.428-1.434 2.518-2.575 3.27-1.14.752-2.524 1.128-4.153 1.128z"
+                    clip-rule="evenodd"
+                  ></path>
+                </svg>
+              </p>
+            </div>
+          </div>
+          <div id="checkout2Container"></div>
+          <h4>You can apply Coupons</h4>
+          <div class="coupondiv">
+            <svg
+              class="couponsign"
+              width="19px"
+              height="19px"
+              viewBox="0 0 19 11"
+            >
+              <path
+                fill="white"
+                d="M.634 0C.284 0 0 .274 0 .611v9.778c0 .338.284.611.634.611h17.733c.35 0 .633-.273.633-.611V.611C19 .274 18.716 0 18.367 0H.634zm3.8 1.222c0-.337.284-.611.633-.611.35 0 .634.274.634.611v1.223c0 .337-.284.61-.634.61-.35 0-.633-.273-.633-.61V1.222zm0 3.667c0-.337.284-.61.633-.61.35 0 .634.273.634.61v1.223c0 .337-.284.61-.634.61-.35 0-.633-.273-.633-.61V4.889zm0 3.667c0-.337.284-.61.633-.61.35 0 .634.273.634.61v1.222c0 .338-.284.612-.634.612-.35 0-.633-.274-.633-.612V8.556zm9.5-2.444c.7 0 1.266.547 1.266 1.221 0 .676-.567 1.222-1.266 1.222-.7 0-1.267-.546-1.267-1.222 0-.674.567-1.221 1.267-1.221zm-3.8-3.667c.699 0 1.266.547 1.266 1.222 0 .674-.567 1.221-1.267 1.221-.699 0-1.266-.547-1.266-1.221 0-.675.567-1.222 1.266-1.222zm.504 5.865c-.209.269-.604.323-.883.122-.279-.202-.335-.584-.126-.853l3.8-4.889c.209-.269.604-.323.883-.121.279.201.335.583.126.852l-3.8 4.889z"
+              ></path>
+            </svg>
+            <div>
+              <h4 class="eatsuretext">Apply Coupon</h4>
+            </div>
+
+            <p class="eatsuretext">View All Coupons</p>
+            <svg class="arrow" width="8px" height="8px" viewBox="0 0 6 9">
+              <path
+                fill="#3B1E6C"
+                d="M5.274 4.078L2.074.745C1.91.573 1.666.502 1.435.56c-.232.057-.415.233-.481.462-.067.23-.006.476.16.648l2.753 2.87-2.753 2.87c-.166.172-.227.42-.16.648.066.23.25.406.48.463.232.057.477-.014.642-.186l3.2-3.332c.124-.131.19-.307.182-.488-.005-.163-.07-.319-.183-.437z"
+              ></path>
+            </svg>
+          </div>
+          <hr />
+          <div class="carttotal">
+            <div id="checkout3">
+              <div id="checkout3Left">
+                <h3>SubTotal</h3>
+                <span>Extra Charges may apply</span>
+              </div>
+              <div id="checkout3Right">
+                <p><span>₹ </span> <span id="cartPrice">0</span></p>
+              </div>
+            </div>
+            <!-- <div class="amount">
+              <div><p>Cart Amount</p></div>
+              <div><span class="price">150</span></div>
+            </div>
+            <div class="taxation">
+              <div><p>Tax</p></div>
+              <div><span class="price">200</span></div>
+            </div>
+            <div class="deliverycharge">
+              <div><p>Delivery</p></div>
+              <div><span style="color: green" class="price">Free</span></div>
+            </div>
+            <hr />
+
+            <div class="totalbill">
+              <div><p>Tax</p></div>
+              <div>
+                <span class="price" style="font-weight: bolder">350</span>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+  let cart1;
+  cart1 = JSON.parse(localStorage.getItem("finalCart"));
+
+  function calcFinalPrice() {
+    let cartPrice = document.querySelector("#cartPrice");
+    let finalPrice = 0;
+    for (let m = 0; m < cart1.length; m++) {
+      finalPrice += cart1[m].count * cart1[m].price;
+    }
+    cartPrice.innerHTML = finalPrice;
+  }
+  calcFinalPrice();
+
+  console.log(cart1);
+  let echeckout2Container = document.querySelector("#checkout2Container");
+  echeckout2Container.innerHTML = "";
+
+  for (let x = 0; x < cart1.length; x++) {
+    let echeckout2 = document.createElement("div");
+    echeckout2.setAttribute("id", "checkout2");
+    let echeckout2Left = document.createElement("div");
+    echeckout2Left.setAttribute("id", "checkout2Left");
+    let img21 = document.createElement("img");
+    // img2.src = ''
+    img21.src = cart1[x].vgIcon;
+    img21.style.width = "15px";
+    img21.style.height = "15px";
+    let p2 = document.createElement("p");
+    p2.setAttribute("id", "oorikane");
+    // p2.innerHTML = ''
+    p2.innerHTML = cart1[x].name;
+
+    let echeckout2Middle = document.createElement("div");
+    echeckout2Middle.setAttribute("id", "checkout2Middle");
+
+    let h42 = document.createElement("h4");
+    h42.setAttribute("id", "curQunat");
+    h42.innerHTML = cart1[x].count;
+    thisCount = h42.innerHTML;
+
+    let btn21 = document.createElement("button");
+    // btn21.setAttribute("id", "decrementQuant");
+    btn21.innerHTML = "-";
+    btn21.onclick = function () {
+      console.log("dec trigg");
+      cart1[x].count--;
+      if (cart1[x].count < 1) {
+        cart1[x].count = 0;
+        // cart1.splice(x, 1);
+      }
+      h42.innerHTML = `${cart1[x].count}`;
+      p2r.innerHTML = cart1[x].price * cart1[x].count;
+      calcFinalPrice();
+    };
+
+    // h42.innerHTML = ''
+
+    let btn22 = document.createElement("button");
+    btn22.innerHTML = "+";
+    btn22.onclick = function () {
+      console.log("inc trigg");
+      cart1[x].count++;
+      h42.innerHTML = `${cart1[x].count}`;
+      p2r.innerHTML = cart1[x].price * cart1[x].count;
+      calcFinalPrice();
+    };
+
+    let echeckout2Right = document.createElement("div");
+    echeckout2Right.setAttribute("id", "checkout2Right");
+    let span21 = document.createElement("span");
+    span21.innerHTML = "₹ ";
+    let p2r = document.createElement("p");
+    // p2r.innerHTML = '
+    p2r.innerHTML = cart1[x].price * cart1[x].count;
+
+    echeckout2.style.margin = "7.5px 0";
+
+    let echeckout2RightContainer = document.createElement("div");
+    echeckout2RightContainer.setAttribute("id", "checkout2RightContainer");
+    echeckout2RightContainer.style.display = "flex";
+
+    echeckout2Left.append(img21, p2);
+    echeckout2Middle.append(btn21, h42, btn22);
+    echeckout2Right.append(span21, p2r);
+    echeckout2RightContainer.append(echeckout2Middle, echeckout2Right);
+    echeckout2.append(echeckout2Left, echeckout2RightContainer);
+
+    echeckout2Container.append(echeckout2);
+  }
+</script>
+<script>
+  document
+    .getElementsByClassName("cart-button1")[0]
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+    });
+  document
+    .getElementsByClassName("cart-button2")[0]
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+    });
+  document
+    .getElementsByClassName("cart-button3")[0]
+    .addEventListener("click", function (e) {
+      e.preventDefault();
+    });
+  let btn1 = document.getElementsByClassName("cart-button1")[0];
+
+  function newaddress() {
+    var divv = document.getElementById("function1");
+    divv.innerHTML = `
+          <div class="row">
+            <div class="col-75">
+              <div class="container">
+                <form id="validate" id="form">
+                  <div class="row">
+                    <div class="col-50">
+                      <div id="error"></div>
+                      <h4>Delivery Address</h4>
+
+                      <label for="fname"> Full Name</label>
+                      <input
+                        type="text"
+                        required
+                        id="fname"
+                        name="fullname"
+                        placeholder="Enter full name here"
+                      />
+
+                      <label for="email">Email</label>
+                      <input
+                        type="text"
+                        id="email"
+                        name="email"
+                        placeholder="abcd@gmail.com"
+                      />
+
+                      <label for="adr"> Address</label>
+                      <input
+                        type="text"
+                        required
+                        id="adr"
+                        name="address"
+                        placeholder="house number, Street number, landmark etc. "
+                      />
+
+                      <label for="city"> City</label>
+                      <input
+                        type="text"
+                        required
+                        id="city"
+                        name="city"
+                        placeholder="Enter City name"
+                      />
+
+                      <div class="zipcode">
+                        <label for="zip">Pin code</label>
+                        <input
+                          type="text"
+                          id="zip"
+                          name="zip"
+                          placeholder="Pin code"
+                        />
+                      </div>
+                      <label>
+
+
+                        Give us 20 minutes for better food Delivery
+                      </label>
+                    </div>
+                  </div>
+                  <button type="submit" class="btn" onclick="enablepayment()">
+                    PROCEED
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>`;
+  }
+  btn1.addEventListener("click", newaddress);
+
+  let btn2 = document.getElementsByClassName("cart-button2")[0];
+  function paynow() {
+    var div2 = document.getElementById("function2");
+    div2.innerHTML = `
+        <div class="row">
+          <div class="col-75">
+            <div class="container">
+              <form id="validate">
+                <div class="row">
+                  <div class="col-50">
+                    <h4>Payment</h4>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color: navy"></i>
+                      <i class="fa fa-cc-amex" style="color: blue"></i>
+                      <i class="fa fa-cc-mastercard" style="color: red"></i>
+                      <i class="fa fa-cc-discover" style="color: orange"></i>
+                    </div>
+
+                    <label for="cname">Name on Card</label>
+                    <input
+                      type="text"
+                      id="cname"
+                      name="cardname"
+                      placeholder="Full name"
+                      required
+                    />
+                    <label for="ccnum">Credit card number</label>
+                    <input
+                      type="text"
+                      id="ccnum"
+                      name="cardnumber"
+                      placeholder="1111-2222-3333-4444"
+                      required
+                    />
+                    <label for="expmonth">Exp Month</label>
+                    <input
+                      type="text"
+                      id="expmonth"
+                      name="expmonth"
+                      placeholder="month"
+                      required
+                    />
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input
+                          type="text"
+                          id="expyear"
+                          name="expyear"
+                          placeholder=" eg. 2024"
+                          required
+                        />
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input
+                          type="text"
+                          id="cvv"
+                          name="cvv"
+                          placeholder="352"
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <label>
+                  <input type="checkbox" checked="checked" name="sameadr" />
+                  Billing address same as Shipping
+                </label>
+                <button type="submit"  class = "btn" onclick="done()"> Continue to checkout </button >
+              </form>
+            </div>
+          </div>
+        </div>`;
+  }
+
+  btn2.addEventListener("click", paynow);
+
+  function adress() {
+    btn1.style.display = "none";
+  }
+
+  btn1.addEventListener("click", adress);
+
+  function enablepayment() {
+    document.getElementsByClassName("cart-button2")[0].disabled = false;
+    btn2.style.backgroundColor = "rgb(250, 200, 35)";
+  }
+  function alert() {
+    btn2.style.display = "none";
+  }
+  let btn3 = document.getElementsByClassName("cart-button3")[0];
+  function done() {
+    document.getElementsByClassName("cart-button3")[0].disabled = false;
+    btn3.style.backgroundColor = "rgb(250, 200, 35)";
+  }
+</script>
+<script>
+  function submitOrder() {
+    alert("hello");
+  }
+</script>

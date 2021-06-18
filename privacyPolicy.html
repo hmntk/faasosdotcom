@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <title>terms&condition</title>
+    <style type="text/css">
+      body {
+        margin: 0px;
+         /* counter-reset: section;  */
+        
+      }
+
+
+
+      .textcontent{
+        background-color: rgb(243, 243, 243);
+        position: relative;
+        z-index: 1;
+      }
+     .right, .header, .userLogin,
+      .content,
+      button,
+      .userLogin,  .citiesbox, .city1, .city2, .city3, .city4, .city5, .city6, .city7, .city8, .city9, .city10, .city11, .city12, .city13, .city14, .city15, .city16, .city17, .city18, .city19, .city20, .city21, .city22, .city23, .city24, .city25, .city26, .city27, .city28, .city29, .city30, .city31, .city32, .city33, .city34, .city35, .city36, .city37, .city38 {
+        display: flex;
+      }
+
+
+      .header {
+        box-shadow: 0 0 1vw rgba(17, 6, 66, 0.5);
+        background-color: white;
+        position: relative;
+        z-index: 2;
+      
+      }
+      .userLogin {
+        width: 26%;
+      justify-content: flex-end;
+      }
+      .userbtn {
+        background-color: white;
+        padding-right: 15px;
+      }
+      .home {
+        padding: 0 8px 1vw 1vw;
+         background-color: white;
+      }
+      .content {
+        width: 100%;
+        justify-content: space-between;
+        box-sizing: border-box;
+        max-width: 1250px;
+        padding: 20px 5px;
+        margin: auto;
+      }
+
+      button {
+        background-color: white;
+        border: none;
+        
+      }
+      .logo {
+        width: 80px;
+        height: 40px;
+      }
+      .login {
+        margin-top: 5px;
+        color:  #162c7d;
+        font-family: "Roboto", sans-serif;
+        font-weight: bolder;
+      }
+         svg {
+        stroke: #162c7d;
+        fill: #162c7d;
+       
+        stroke-width: "2";
+      }
+ .fa-times {
+        font-size: 30px;
+        color: rgb(44, 56, 110);
+      }
+
+
+  .sidebar {
+        margin-top: 65px;
+        position: fixed;
+        width: 240px;
+        right: -240px;
+        height: 50%;
+
+        background: #010936;
+        transition: all 0.5s ease;
+        border-radius: 0 0 0 20px;
+      }
+      .sidebar header {
+        font-size: 28px;
+        color: white;
+        line-height: 70px;
+        text-align: center;
+        background: #01051f;
+        user-select: none;
+        font-family: "Montserrat", sans-serif;
+      }
+      .sidebar a {
+        display: block;
+        height: 65px;
+        width: 100%;
+        color: white;
+        line-height: 65px;
+        padding-left: 30px;
+        box-sizing: border-box;
+        border-bottom: 1px solid black;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-left: 5px solid transparent;
+        font-family: "Open Sans", sans-serif;
+        transition: all 0.5s ease;
+      }
+      a.active,
+      a:hover {
+        border-left: 5px solid rgb(243, 214, 83);
+        color: rgb(243, 214, 83);
+      }
+      .sidebar a i {
+        font-size: 23px;
+        margin-right: 16px;
+      }
+      .sidebar a span {
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+      #check {
+        display: none;
+      }
+      label #btn,
+      label #cancel {
+        position: absolute;
+        cursor: pointer;
+        color: rgb(231, 226, 226);
+        border-radius: 5px;
+
+        /* border: 1px solid #262626; */
+        /* top: 20px;
+        right: 150px; */
+
+        font-size: 29px;
+        background: white;
+        height: 25px;
+        width: 25px;
+        text-align: center;
+        line-height: 45px;
+        transition: all 0.5s ease;
+      }
+      label #cancel {
+        opacity: 0;
+        visibility: hidden;
+      }
+      #check:checked ~ .sidebar {
+        right: 0;
+      }
+
+      #check:checked ~ label #btn {
+        margin-right: 240px;
+        opacity: 0;
+        visibility: hidden;
+      }
+      #check:checked ~ label #cancel {
+        margin-right: 240px;
+        opacity: 1;
+        visibility: visible;
+      }
+
+
+
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:600&display=swap");
+
+
+
+
+      h4, .h5{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: #333333;
+      line-height: 0;
+     flex-wrap: wrap;
+
+      }
+      h4{
+        margin: 5px 0px 25px 0px;
+      }
+      .location{
+            margin-left: 20px;
+        font-family: 'Times New Roman', Times, serif;
+       }
+     
+      .para, .para1,
+      .title, .title1 {
+        font-family: "Nunito", sans-serif;
+        margin-top: 0;
+      }
+      .para, .para1 {
+        color: gray;
+        /* text-align: justify; */
+        line-height: 20px;
+        margin-bottom: 1.5vw;
+        font-size: 16px;
+        display: list-item;
+        margin-left: 15px;
+       
+      }
+     /* .para::before {
+        counter-increment: section;
+        content: counter(section) ".";
+      }   */
+  
+      .textbox {
+        max-width: 1200px;
+        margin: auto;
+        padding: 2.5vw 10px 0 10px;
+        
+      }
+      .faasosLogo{
+        display: flex;
+        flex-direction: row;
+      }
+      .title, .title1 {
+        font-size: 18px;
+        font-weight: bolder;
+        color: black;
+      }
+   
+      @media screen and (max-width: 1024px){
+
+        .content{
+          margin: 0vw 0vw;
+        }
+      }
+     .citiesbox1, .footerbox{
+        background-color: #010936;
+      }
+      p{
+        color: white;
+        font-family: "Nunito", sans-serif;
+       }
+      .citiesbox{
+      max-width: 70vw;
+      margin: auto;
+      flex-direction: row;
+      justify-content:space-between;
+      flex-wrap: wrap;
+      }
+       .citiesbox1{
+         display: flex;
+      max-width: 1300px;
+      margin: auto;
+      flex-wrap: wrap;
+      
+
+      }
+      .footerbox{
+        box-sizing: border-box;
+        padding: 30px;
+      }
+      
+      .legal_contact{
+      display: flex;
+      max-width: 70vw;
+      margin: auto;
+      flex-direction: row;
+      justify-content: flex-start;
+        line-height: 0;
+       flex-wrap: wrap;
+      
+      }
+
+      .city1, .city2, .city3, .city4, .city5, .city6, .city7, .city8, .city9, .city10, .city11, .city12, .city13, .city14, .city15, .city16, .city17, .city18, .city19, .city20, .city21, .city22, .city23, .city24, .city25, .city26, .city27, .city28, .city29, .city30, .city31, .city32, .city33, .city34, .city35, .city36, .city37, .city38
+      {    line-height: 0;
+       margin: -3px 0px;
+       width: 33%;
+      justify-content: flex-start;
+      font-size: 16px;
+       
+      }
+       .heading{
+         font-family: "Nunito", sans-serif;
+         color: rgb(212, 208, 208);
+         font-size: 21px;
+         font-weight: 500;
+         width: 100%;
+      }
+       @media screen and (max-width: 550px){
+       div.right, div.left{
+        width: 100%;
+      }
+      }
+      @media screen and (max-width: 1439px){
+         .city1, .city2, .city3, .city4, .city5, .city6, .city7, .city8, .city9, .city10, .city11, .city12, .city13, .city14, .city15, .city16, .city17, .city18, .city19, .city20, .city21, .city22, .city23, .city24, .city25, .city26, .city27, .city28, .city29, .city30, .city31, .city32, .city33, .city34, .city35, .city36
+      {
+        width: 25%;
+      }
+      
+      }
+       @media screen and (max-width: 764px){
+         .city1, .city2, .city3, .city4, .city5, .city6, .city7, .city8, .city9, .city10, .city11, .city12, .city13, .city14, .city15, .city16, .city17, .city18, .city19, .city20, .city21, .city22, .city23, .city24, .city25, .city26, .city27, .city28, .city29, .city30, .city31, .city32, .city33, .city34, .city35, .city36, .city37, .city38
+      {
+        width: 50%;
+      }
+      }
+       @media screen and (max-width: 1439px){
+       .city37, .city38{
+        width: 50%;
+      }
+      }
+       @media screen and (max-width: 432px){
+       .city37, .city38{
+        width: 100%;
+      }
+      }
+      .space{
+        height: 40px;
+        width: 100%;
+      }
+      .city37, .city38{
+      flex-direction: column;
+      flex-wrap: wrap;
+      margin-top: 10px;
+        }
+        hr{
+          color: rgb(102, 133, 238);
+          max-width: 1200px
+        ;
+        }
+        button, .href1{
+           background-color: #010936;
+           color: white;
+             font-family: "Nunito", sans-serif;
+             font-size: 16px;
+             margin-left: -7px;
+            
+        }
+        .href1{
+          margin-left: 0px;
+          text-decoration: none;
+        }
+         .btn p{
+         cursor: pointer;
+          line-height: 0px ;
+          margin: 11px 0;
+          font-size: 16px;
+          flex-wrap: wrap;
+          
+          }
+
+.mail { stroke: white;
+        fill: #010936;
+        cursor: pointer;
+      }
+      /* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+/* rounded icon */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 17px;height: 17px;
+cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+    box-shadow: 0 4px rgba(153, 153, 153, 0.116);
+}
+
+
+/* Add a hover effect if you want */
+.fa:hover, .href1:active {
+  opacity: 0.3;
+}
+.fa:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  
+}
+.href1:active{
+  transform: translateY(4px);
+  
+}
+.fa-instagram {
+  background: rgb(82, 86, 119);
+  color: #010936;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background:rgb(82, 86, 119);
+  color: #010936;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: rgb(82, 86, 119);
+  color: #010936;
+}
+.right p {
+  
+font-family: Arial, Helvetica, sans-serif;
+font-size: 25px;
+margin-top: 10px;
+margin-right: 10px;
+color: rgb(133, 133, 133);
+
+}
+a{
+  margin-right: 5px;
+}
+  .right{
+  
+  margin-top: 10px;
+ width: 50%;
+  justify-content: flex-end;
+ 
+  }
+  
+.left{
+   width: 50%;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 18px;
+color: rgb(133, 133, 133);
+margin-top: 15px;
+margin-bottom: 10px;
+
+justify-content: flex-start;
+
+
+}
+ 
+
+ .citiesbox1{
+  
+        background-color: #010936;
+      }
+      
+</style>
+  </head>
+  <body>
+    <header>
+    <div class="header">
+
+
+
+      <div class="content">
+        <div class="faasosLogo">
+          <img
+            class="logo"
+            src="https://assets.faasos.io/faasos_v2/faasosLogoPurple.svg"
+            alt="Logo"
+          />
+          <div class="location">
+  <h4>Pune</h4>
+  <p class="h5">PUNE maharashtra</p>
+</div>
+        </div>
+
+        <div class="userLogin">
+          <button class="userbtn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="24">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+              <circle cx="12" cy="7" r="4"></circle>
+            </svg>
+            <p class="login">Login</p>
+          </button>
+
+
+ <input type="checkbox" id="check" />
+          <label  for="check" >
+           <svg
+              id="btn"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="3"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+             <i class="fas fa-times"></i>
+          </label>
+           <div class="sidebar">
+            <header>My Menu</header>
+
+            <a href="https://www.treatsure.in/">
+              <i class="fas fa-hamburger"></i>
+              <span>Prty Orders</span>
+            </a>
+            <a href="#">
+              <i class="fas fa-users"></i>
+              <span>About Us</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+   <div class="textcontent">  
+      <div class="textbox">
+        <div class="privacypolicy">
+          <p class="title">Privacy policy</p>
+           <p class="para">Your IP is logged when placing an order. This is for reasons of fraud protection. Fraudulent orders will be submitted to the appropriate authorities.
+              </p><p class="para">Faasos Food Services Private Limited collects personally identifiable information that you may voluntarily provide on online forms, which may include: user registration, contact requests, guest comments, online surveys, and other online activities. The personally identifiable information (Personal Information) collected on this Site / our Mobile Application can include some or all of the following: your name, address, telephone number, email addresses, demographic information, and any other information you may voluntarily provide.</p>
+            <p class="para">In addition to the Personal Information identified above, our web servers automatically identify computers by their IP addresses. Company may use IP addresses to analyze trends, administer the site track users movement and gather broad demographic information for aggregate use. To emphasize, IP addresses are not linked to Personal.</p></div>     <br>   
+                
+              <br> <div class="privacypolicy">
+                <p class="title">Desclaimer
+<p class="para">It is your own responsibility to ensure that you are fully aware of all of these terms and conditions when making a purchase on www.faasos.com / Faasos Mobile Applications.</p>
+         <p class="para">Faasos Food Services Private Limited reserves the right to change / modify these terms & conditions at their own discretion anytime.</p>
+         <p class="para">The images shown are only indicative in nature & the actual product may vary in size, colour etc.</p>
+         <p class="para">Faasos Food Services Private Limited reserves the right to change any part or piece of information on this web site without any notice to customers or visitors.</p>     
+            </div>
+    <br> 
+    </div>
+ 
+
+        </div>
+    
+     
+    <div class="footerbox">
+      <div class="contentbox">
+        <div class="apnacontent">
+           <br>
+         <div class="citiesbox">
+          
+             <p class="heading">Cities we deliver to</p>
+            <div class="city1"><p>Pune</p></div>
+            <div class="city2"><p>Mumbai</p></div>
+            <div class="city3"><p>Bangalore</p></div>
+        
+<div class="city4"><p>Noida</p></div>
+            <div class="city5"><p>Gurgaon</p></div>
+            <div class="city6"><p>New Delhi</p></div>
+            <div class="city7"><p>Hyderabad</p></div>
+            <div class="city8"><p>Chennai</p></div>
+            <div class="city9"><p>Indore</p></div>
+            <div class="city10"><p>Nagpur</p></div>
+            <div class="city11"><p>Faridabad</p></div>
+            <div class="city12"><p>Ahmedabad</p></div>
+            <div class="city13"><p>Ghaziabad</p></div>
+             <div class="city14"><p>Coimbatore</p></div>
+            <div class="city15"><p>Dubai</p></div>
+            <div class="city16"><p>Vadodra</p></div>
+            <div class="city17"><p>Bhopal</p></div>
+            <div class="city18"><p>Kolkata</p></div>
+            <div class="city19"><p>Surat</p></div>
+           <div class="city20"><p>Mysore</p></div>
+            <div class="city21"><p>Pondicherry</p></div>
+            <div class="city22"><p>Nashik</p></div>
+            <div class="city23"><p>Jaipur</p></div>
+            <div class="city24"><p>Panchukla</p></div>
+            <div class="city25"><p>Mohali</p></div>
+            <div class="city26"><p>Chandigarh</p></div>
+            <div class="city27"><p>Vijaywada</p></div>
+            <div class="city28"><p>Vellore</p></div>
+            <div class="city29"><p>Zirakpur</p></div>
+            <div class="city30"><p>Lucknow</p></div>
+            <div class="city31"><p>Kochi</p></div>
+            <div class="city32"><p>Vizag</p></div>
+            <div class="city33"><p>Tirupati</p></div>
+            <div class="city34"><p>Trippur</p></div>
+            <div class="city35"><p>Kota</p></div>
+            <div class="city36"><p>Many more...</p></div>
+            <div class="space"></div>
+          </div>
+          <div class="legal_contact">
+             <div class="city37 "><p class="heading"> Legal</p><button class="btn"><p><a class="href1" href="https://www.faasos.com/terms">Terms & Conditions</a></p></button><button class="btn"><p><a class="href1" href="https://www.faasos.com/privacy">Privacy Policy</a></p></button></div>  
+            <div class="city38 "><p class="heading"> Contact </p><button class="btn"><p><a class="href1" href="mailto:feasts@faasos.com"><svg class="mail" xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>crm@faasos.com</a></p> </button></div>
+            <div class="space"></div> </div>
+         <hr>
+         <div class="citiesbox1">
+           <div class="left">2020 @ Faasos. All rights reserved</div>
+           <div class="right"><p>Follow us on</p> <a href="https://www.facebook.com/Faasos" class="fa fa-facebook"></a>
+<a href="https://twitter.com/faasos" class="fa fa-twitter"></a><a href="https://www.instagram.com/faasos/" class="fa fa-instagram"></a></div>
+        </div> 
+      
+      </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
