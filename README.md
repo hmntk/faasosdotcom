@@ -1,7 +1,5 @@
+![Screenshot (269)](https://user-images.githubusercontent.com/28835550/122637287-65575600-d10b-11eb-9797-8ab2e8133215.png)
 
-# Logo
-
-![Logo](https://d2sj89osparb2a.cloudfront.net/images/media/faasos-online-food-order-delivery-offers.png)
     
 # Faasos
 
