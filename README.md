@@ -51,7 +51,7 @@ We are a learner and this is our first clone so faced many issues to build this 
 - Javascript code optimazation
 ## Support
 
-For support, email amol_nj2_051@masai.school, amol_nj2_051@masai.school or join our Slack channel.
+For support, email amol_nj2_051@masai.school, hemanth_nj2_077@masai.school or join our Slack channel.
 
 ## External libraries
 
