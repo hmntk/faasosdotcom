@@ -1,0 +1,1059 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+.headtext1 {
+  font-size: 25px;
+  padding: 0;
+  margin: 0;
+  font-weight: 600;
+  color: black;
+}
+
+.formContainer1 {
+  width: 400px;
+  margin: auto;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  padding: 1%;
+}
+input,
+#btnn1 {
+  width: 80%;
+  margin: auto;
+  height: 30px;
+  font-size: 20px;
+  border-bottom-width: 1px;
+  margin: 5% 1%;
+}
+#btnn1 {
+  width: 85%;
+  height: 60px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: rgb(243, 214, 83);
+  color: black;
+}
+.formHeader p {
+  color: black !important;
+  font-size: 16px;
+}
+.formFooter {
+  font-size: 80%;
+  color: black !important;
+}
+.signupForm input {
+  height: 50px;
+  width: 82%;
+}
+
+/* The Modal (background) */
+.modal1,
+.modal2 {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 10;
+}
+.modal1 p,
+.modal2 p {
+  color: black !important;
+}
+
+/* Modal Content (image) */
+.modal-content1 {
+  margin: auto;
+  display: block;
+  border-radius: 15px;
+}
+
+/* Caption of Modal Image */
+#captions1 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content1,
+#captions1 {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(0);
+  }
+  to {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* The Close Button */
+.close1 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close1:hover,
+.close1:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+}
+.content,
+button,
+.userLogin {
+  display: flex;
+}
+.userLogin {
+  margin: 30px 5px 0 5px;
+  width: 60%;
+
+  justify-content: flex-end;
+}
+
+.userbtn1 {
+  margin-left: 20px;
+}
+.login1 {
+  padding: 5px;
+  margin: 15px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 2px 1px rgb(25, 24, 95);
+  border: 1px solid rgb(243, 214, 83);
+}
+.userbtn {
+  box-sizing: border-box;
+  padding: 5px;
+}
+.headtext {
+  font-size: 40px;
+  margin-top: 0 0 48px;
+  width: 80%;
+  margin: 0 0 48px 90px;
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  margin: 60px 0 60px 90px;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+}
+img.logo {
+  width: 140px;
+  height: 80px;
+}
+
+.login {
+  color: rgb(243, 214, 83);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+
+  background-image: transparent;
+}
+
+svg {
+  fill: rgb(243, 214, 83);
+  stroke: rgb(243, 214, 83);
+  stroke-width: "2";
+}
+#homepage-header {
+  display: flex;
+  flex-direction: column;
+}
+
+#homepage-header {
+  flex-direction: row;
+  width: 100%;
+}
+.location-div {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  height: 540px;
+  background-image: url(https://assets.faasos.io/faasos_v2/brandPattern.png);
+}
+
+.image-div-image {
+  width: 560px;
+  height: 580px;
+  border-radius: 0 0 0 50px;
+}
+.locateme {
+  width: 845px;
+  height: 68px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  margin-left: 90px;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yellowbutton {
+  width: 150px;
+  height: 68px;
+  border-radius: 0 5px 5px 0;
+  align-items: center;
+  text-align: center;
+  float: right;
+  color: black;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  background-color: rgb(243, 214, 83);
+}
+
+.whitespace {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.outputright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 30px;
+  font-size: 20px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: gray;
+}
+.inputright {
+  display: flex;
+  flex-direction: row;
+}
+
+@media screen and (min-width: 1440px) {
+  .location-div {
+    height: 570px;
+    width: 100%;
+  }
+
+  .image-div-image {
+    height: 680px;
+    width: 660px;
+  }
+}
+
+@media screen and (max-width: 989px) {
+  .userLogin {
+    flex-direction: column;
+    width: 70%;
+  }
+
+  .userbtn1 {
+    margin-left: 0;
+  }
+  .faasosLogo {
+    box-sizing: border-box;
+
+    padding-top: 60px;
+  }
+}
+
+@media screen and (max-width: 959px) {
+  .image-div-image {
+    display: none;
+  }
+
+  .content,
+  .headtext,
+  .locateme {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .content,
+  .headtext,
+  .locateme {
+    margin-left: 30px;
+  }
+}
+@media (max-width: 330px) {
+  .locateme {
+    margin-left: 10px;
+  }
+}
+/* homepage done above middle content started below */
+body {
+  margin: 0px;
+}
+
+h1,
+.h6,
+.grid0,
+.bottomline,
+.boxxcontainer,
+.text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.bottomline {
+  font-size: 13px;
+  margin: 5px 0 30px 0;
+}
+.h6 {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 0.6cm;
+}
+
+h1,
+.bottomline {
+  text-align: center;
+}
+
+.youtubecont {
+  display: flex;
+  flex-direction: row;
+  border: none;
+  max-width: 1100px;
+  width: 97%;
+  border-radius: 1vw;
+  margin: 30px auto;
+  max-width: 974px;
+  height: 250px;
+  height: auto;
+  max-width: 1000px;
+}
+.line {
+  display: flex;
+  flex-direction: row;
+}
+.cont1,
+.cont2 {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.cont1 {
+  box-sizing: border-box;
+  padding: 30px 0 20px 20px;
+}
+iframe {
+  border: 5px inset rgb(145, 136, 231);
+  border-radius: 5px;
+  width: 100%;
+  height: 100%;
+}
+.tablet2 {
+  padding-top: 20px;
+  width: 100%;
+  margin: auto;
+}
+
+#midle-content {
+  background-color: rgb(243, 241, 236);
+}
+
+h1 {
+  font-size: 32px;
+}
+ul {
+  padding-left: 0px;
+  margin-block-start: 0em;
+}
+/* boxxcontainer */
+.tablet3 {
+  max-width: 1100px;
+  margin: auto;
+}
+.hexagon {
+  background: rgb(58, 58, 179);
+  width: 97%;
+  margin: auto;
+  padding: 0px 10px;
+}
+
+.hexagon:before,
+.hexagon:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 100%;
+  border-bottom: 15px solid rgb(93, 93, 185);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+}
+
+.hexagon:after {
+  bottom: auto;
+  top: 100%;
+  border-bottom: none;
+  border-top: 15px solid rgb(93, 93, 185);
+}
+.hexagon,
+.boxxcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+}
+.hexagon {
+  position: relative;
+  background: rgb(93, 93, 185);
+  height: auto;
+  max-width: 1100px;
+  width: 97%;
+  margin: auto;
+  height: auto;
+  margin-bottom: -4vw;
+}
+
+.boxx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxx1,
+.boxx2,
+.boxx3,
+.boxx4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 10px 14px;
+}
+.tickmark {
+  text-align: center;
+  display: block;
+  border-radius: 3px;
+  width: 13px;
+  background-color: white;
+  font-size: 10px;
+  height: 13px;
+  border: 1px solid black;
+  margin: 5px auto;
+  color: rgb(100, 86, 223);
+}
+.ticks,
+.text {
+  font-size: 13px;
+}
+hr {
+  background-color: white;
+  border-right: 0.1vw solid white;
+  margin: 0 20px;
+}
+/* boxxcontainer */
+
+.grid0 {
+  margin: 150px 0 50px 0;
+  font-size: 16px;
+  color: rgb(243, 214, 83);
+  text-align: center;
+}
+
+.tablet4 {
+  background-color: rgb(84, 61, 146);
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 20px;
+  height: auto;
+}
+#flexbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 1100px;
+  align-items: flex-end;
+  margin: auto;
+  padding: 5px;
+}
+.grid1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 0 5px;
+}
+.png {
+  width: 77px;
+  height: 50px;
+}
+.text {
+  color: white;
+}
+.div2 {
+  margin-top: 16px;
+
+  text-align: center;
+}
+
+@media screen and (max-width: 1023px) {
+  .youtubecont {
+    flex-direction: column;
+  }
+  .cont1,
+  .cont2 {
+    width: 100%;
+    padding: 0;
+  }
+  ul {
+    margin: 0;
+  }
+  iframe {
+    width: 345px;
+    height: 223px;
+    margin: auto;
+  }
+
+  #flexbox {
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  .grid1 {
+    width: 100%;
+  }
+
+  .png {
+    width: 50px;
+    height: 32px;
+  }
+  .text {
+    margin-top: 0;
+  }
+  li.line {
+    width: 65%;
+    margin: auto;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 961px) and (max-width: 1023px) {
+  .text {
+    margin: 0 0 3px 0;
+  }
+  #flexbox {
+    grid-template-columns: 58% 43%;
+  }
+  .div1,
+  .div2 {
+    height: 32px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .tablet3 {
+    margin-bottom: -8vw;
+  }
+  .locateme {
+    width: 90%;
+  }
+
+  .ticks {
+    font-size: 10px;
+  }
+  .h6 {
+    font-size: 14px;
+    color: black;
+  }
+  h1 {
+    font-size: 20px;
+  }
+
+  .grid1 {
+    flex-direction: row;
+  }
+  .png {
+    width: 50px;
+    height: 30px;
+    margin: 0px 10px 15px 0px;
+  }
+  .div2 {
+    margin-top: 0;
+    text-align: start;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .boxxcontainer {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 60%;
+  }
+  .hexagon {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  #headerbox {
+    height: 400px;
+  }
+  .locateme,
+  .yellowbutton {
+    height: 54px;
+  }
+
+  .tablet3 {
+    margin-top: 20px;
+    margin-bottom: -19vw;
+    align-items: center;
+  }
+
+  .tickmark {
+    margin: 10px 10px 0 0;
+  }
+  .ticks {
+    margin: 10px 0 0 0;
+  }
+
+  hr {
+    display: none;
+  }
+  .boxx1,
+  .boxx2,
+  .boxx3,
+  .boxx4 {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+  }
+  .boxx {
+    width: 150px;
+    justify-content: space-around;
+  }
+
+  .hexagon {
+    width: 65%;
+    margin: auto;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 659px) {
+  #flexbox {
+    grid-template-columns: 100%;
+  }
+}
+.svg {
+  margin: 0 25px 25px 0;
+  color: rgb(243, 214, 83);
+}
+path {
+  width: 54px;
+}
+
+/* footer started */
+.right,
+.header,
+.content,
+button,
+.userLogin,
+.citiesbox,
+.cityy,
+.city37,
+.city38 {
+  display: flex;
+}
+
+.header {
+  box-shadow: 0 0 1vw rgba(17, 6, 66, 0.5);
+  background-color: transparent;
+}
+.userLogin {
+  width: 26%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+.userbtn {
+  background-color: transparent;
+  padding-right: 15px;
+}
+.home {
+  padding: 0 8px 1vw 1vw;
+  background-color: transparent;
+  color: rgb(243, 214, 83);
+}
+.content {
+  width: 100%;
+  justify-content: space-between;
+  box-sizing: border-box;
+  max-width: 1300px;
+
+  padding: 20px 5px;
+  margin: auto;
+}
+
+button {
+  border: none;
+}
+
+h4,
+.h5 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: #333333;
+  line-height: 0;
+  flex-wrap: wrap;
+}
+h4 {
+  margin: 5px 0px 25px 0px;
+}
+
+svg {
+  stroke: rgb(243, 214, 83);
+  fill: rgb(243, 214, 83);
+
+  stroke-width: "2";
+}
+
+.citiesbox1,
+.footerbox {
+  background-color: #010936;
+}
+p {
+  color: white;
+  font-family: "Nunito", sans-serif;
+}
+.citiesbox {
+  max-width: 70vw;
+  margin: auto;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.citiesbox1 {
+  display: flex;
+  max-width: 1400px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.footerbox {
+  box-sizing: border-box;
+  padding: 30px;
+}
+
+.legal_contact {
+  display: flex;
+  max-width: 70vw;
+  margin: auto;
+  flex-direction: row;
+  justify-content: flex-start;
+  line-height: 0;
+  flex-wrap: wrap;
+}
+
+.cityy,
+.city37,
+.city38 {
+  line-height: 0;
+  margin: -3px 0px;
+  width: 33%;
+  justify-content: flex-start;
+  font-size: 16px;
+}
+.heading {
+  font-family: "Nunito", sans-serif;
+  color: rgb(212, 208, 208);
+  font-size: 21px;
+  font-weight: 500;
+  width: 100%;
+}
+@media screen and (max-width: 550px) {
+  div.right,
+  div.left {
+    width: 100%;
+  }
+  .yellowbutton {
+    width: 110px;
+  }
+  .yellowbuttontext {
+    font-size: 16px;
+  }
+  .outputright {
+    margin-right: 5px;
+  }
+  .inputright {
+    width: 95%;
+    justify-content: flex-end;
+  }
+}
+
+@media screen and (max-width: 1439px) {
+  .cityy {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 764px) {
+  .cityy,
+  .city37,
+  .city38 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 1439px) {
+  .city37,
+  .city38 {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 432px) {
+  .city37,
+  .city38 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 498px) {
+  .yellowbutton {
+    width: 35%;
+  }
+  .yellowbuttontext {
+    font-size: 13px;
+    margin: 0;
+  }
+}
+.space {
+  height: 40px;
+  width: 100%;
+}
+.city37,
+.city38 {
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+hr {
+  color: rgb(102, 133, 238);
+  max-width: 1400px;
+}
+.city38 button,
+.href1 {
+  background-color: #010936;
+  color: white;
+  font-family: "Nunito", sans-serif;
+  font-size: 16px;
+  margin-left: -7px;
+}
+.href1 {
+  margin-left: 0px;
+  text-decoration: none;
+}
+.btn p {
+  cursor: pointer;
+  line-height: 0px;
+  margin: 11px 0;
+  font-size: 16px;
+  flex-wrap: wrap;
+}
+
+.mail {
+  stroke: white;
+  fill: #010936;
+  cursor: pointer;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 25px;
+  height: 25px;
+  text-align: center;
+  text-decoration: none;
+}
+/* rounded icon */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  box-shadow: 0 4px rgba(153, 153, 153, 0.116);
+}
+
+/* Add a hover effect if you want */
+.fa:hover,
+.href1:active {
+  opacity: 0.3;
+}
+.fa:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.href1:active {
+  transform: translateY(4px);
+}
+.fa-instagram {
+  background: rgb(82, 86, 119);
+  color: #010936;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: rgb(82, 86, 119);
+  color: #010936;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: rgb(82, 86, 119);
+  color: #010936;
+}
+.right p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: rgb(133, 133, 133);
+}
+a {
+  margin-right: 5px;
+}
+.right {
+  margin-top: 10px;
+  width: 50%;
+  justify-content: flex-end;
+}
+
+.left {
+  width: 50%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: rgb(133, 133, 133);
+  margin-top: 15px;
+  margin-bottom: 10px;
+
+  justify-content: flex-start;
+}
+.h6,
+.bottomline {
+  color: black;
+}
+
+.citiesbox1 {
+  background-color: #010936;
+}
+.inputleft {
+  margin: 0 20px;
+  font-size: 20px;
+  color: gray;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.outputright {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 30px 0 0;
+  font-size: 16px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: gray;
+}
+.graytext {
+  color: gray;
+  font-size: 16px;
+}
+.yellowbuttontext {
+  color: black;
+  font-size: 18px;
+  align-items: center;
+}
+
+/* footerbox done */
+
+.loginContainer {
+  width: fit-content;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1%;
+}
+.loginContainer button {
+  background-color: rgb(243, 214, 83);
+  color: white;
+}
+.formContainer {
+  width: fit-content;
+  margin: auto;
+  background-color: white;
+  border-radius: 20px;
+  padding: 1%;
+}
+input,
+button {
+  margin: 1%;
+}
+.formFooter {
+  font-size: 80%;
+}
+.signupForm input,
+.loginForm input {
+  color: black !important;
+  border-radius: 15px;
+}
+.loginContainer button,
+.formContainer button {
+  background-color: rgb(243, 214, 83);
+  border: 1px solid black;
+  color: black;
+  border-radius: 15px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#auth input {
+  border-radius: 15px;
+}

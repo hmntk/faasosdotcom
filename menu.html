@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="icon" href="/images/faviconFaasos.png">
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/menu.css">
+  </head>
+  <body>
+    <div class="offer_popup" style="display: none;">
+      <div class="offer_close">
+        <img
+          src="https://img.pngio.com/close-png-15-clip-arts-for-free-download-on-een-2019-close-png-512_512.png"
+          width="40px"
+          alt="&times;"
+        />
+      </div>
+      <div class="offer_imgbx">
+        <img
+          style="border-radius: 40px"
+          src="https://assets.faasos.io/faasos_v2/faasos-banner-offer_3.jpg"
+        />
+      </div>
+    </div>
+    <div id="part1">
+      <div class="container_header">
+        <div class="header">
+          <div class="header_left">
+            <img
+              src="https://assets.faasos.io/faasos_v2/faasosLogoPurple.svg"
+              alt="faasos-logo"
+            />
+            <div class="header_location">
+              <div class="header_location_selectable">
+                <span>Hyderabad</span
+                ><span class="material-icons" style="font-size: 25px">
+                  expand_more
+                </span>
+              </div>
+              <div class="header_location_display">
+                <span>Telangana, IN</span>
+              </div>
+            </div>
+          </div>
+          <div class="header_right">
+            <button id="modal-btn">
+              <span class="material-icons" style="font-size: 25px">
+                account_circle </span
+              ><span id="loginName">Login</span>
+            </button>
+            <button>
+              <span class="material-icons" style="font-size: 30px"> menu </span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="slideshow">
+        <ul class="slideshow-content">
+          <li>
+            <img src="/images/maruee1.jpg" />
+          </li>
+          <li>
+            <img src="/images/maruee2.jpg" />
+          </li>
+          <li>
+            <img src="/images/maruee3.jpg" />
+          </li>
+          <li>
+            <img src="/images/maruee4.jpg" />
+          </li>
+          <li>
+            <img src="/images/maruee5.jpg" />
+          </li>
+          <li>
+            <img src="/images/maruee6.jpg" />
+          </li>
+        </ul>
+      </div>
+    </div>
+   
+    <!-- <button onclick="toggle()" class="toggleDark" style="position: fixed; left: 0; top: 50%; width: 50px; height: 50px; ">Dark Mode</button> -->
+
+
+    </div>
+    <div id="part2">
+      <div>
+        <div class="sort_filter_tab">
+          <div class="sft_line">
+            <span>Order food online in Hyderabad!</span>
+          </div>
+          <div class="sft">
+            <div class="sft_search">
+              <button>
+                <span class="material-icons"> search </span>Search for Wraps!
+              </button>
+            </div>
+            <div class="sft_nv">
+              <button>
+                <span class="material-icons"> check_box_outline_blank </span
+                >Non-Veg only
+              </button>
+            </div>
+            <div class="sft_v">
+              <button>
+                <span class="material-icons"> check_box_outline_blank </span>Veg
+                only
+              </button>
+            </div>
+          </div>
+        </div>
+      <div class="menuAndCheckout">
+        <div id="menuSection">
+          <span onclick="showSignature()" id="m1">Signature Wraps</span>
+          <span onclick="showClassic()" id="m2">Classic Wraps</span>
+          <span onclick="showRice()" id="m3">Rice Bowls</span>
+          <span onclick="showSides()" id="m4">Sides and Beverages</span>
+          <span onclick="showAllDay()" id="m5">All Day Breakfast & Snacks</span>
+          <span onclick="showBiryani()" id="m6">Biryanis</span>
+          <span onclick="showQuick()" id="m7">Quick Meals</span>
+          <span onclick="showRoyal()" id="m8">Royal Meals</span>
+          <span onclick="showDeserts()" id="m9">Deserts</span>
+        </div>
+
+<div id="menu"><div class="menuItem"><div id="menuItem1"><img src="https://product-assets.faasos.io/production/product/image_1598617827736_Rajma%20Masala%20Royal%20%20Combo-1.jpg"></div><div id="menuItemPadding"><div id="menuItem2"><div id="menuItem2Left"><span id="menuItemTitle">Rajma Masala Royal Meal</span></div><div id="menuItem2Right"><img src="/images/veg.png"><span>₹</span><span id="menuItemPrice">240</span></div></div><p id="menuDescription">Protein-rich rajma beans, slowly cooked in a thick &amp; spicy onion-tomato masala gravy. Served with basmati rice, a homestyle paratha and gulab jamun.</p><div id="popDescription" style="display: none;"><div><img src="https://product-assets.faasos.io/production/product/image_1598617827736_Rajma%20Masala%20Royal%20%20Combo-1.jpg" style="width: 350px;"><p>Protein-rich rajma beans, slowly cooked in a thick &amp; spicy onion-tomato masala gravy. Served with basmati rice, a homestyle paratha and gulab jamun.</p></div></div><div id="menuItem3"><div id="menuItem3Left"><button id="ratingButton">4.5<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Empty_Star.svg/768px-Empty_Star.svg.png"></button></div><div id="menuItem3Right" style="display: flex;"><button id="addCartButton">ADD</button></div></div></div></div><div class="menuItem"><div id="menuItem1"><img src="https://product-assets.faasos.io/production/product/image_1588937784813_Sabudana%20Khichdi%20_%20Curd%20Meal%20%28Shravan%29.jpg"></div><div id="menuItemPadding"><div id="menuItem2"><div id="menuItem2Left"><span id="menuItemTitle">Sabudana Khichadi Meal</span></div><div id="menuItem2Right"><img src="/images/veg.png"><span>₹</span><span id="menuItemPrice">200</span></div></div><p id="menuDescription">Turning your fast into a feast with this well balanced meal of Sabudana khichdi served with a side of curd.</p><div id="popDescription" style="display: none;"><div><img src="https://product-assets.faasos.io/production/product/image_1588937784813_Sabudana%20Khichdi%20_%20Curd%20Meal%20%28Shravan%29.jpg" style="width: 350px;"><p>Turning your fast into a feast with this well balanced meal of Sabudana khichdi served with a side of curd.</p></div></div><div id="menuItem3"><div id="menuItem3Left"><button id="ratingButton">4.3<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Empty_Star.svg/768px-Empty_Star.svg.png"></button></div><div id="menuItem3Right" style="display: flex;"><button id="addCartButton">ADD</button></div></div></div></div><div class="menuItem"><div id="menuItem1"><img src="https://product-assets.faasos.io/production/product/image_1598617858116_Smoked%20Butter%20Chicken%20Royal%20Combo-1.jpg"></div><div id="menuItemPadding"><div id="menuItem2"><div id="menuItem2Left"><span id="menuItemTitle">Smoked Butter Chicken Royal Meal</span></div><div id="menuItem2Right"><img src="/images/non-veg.png"><span>₹</span><span id="menuItemPrice">323</span></div></div><p id="menuDescription">Perfectly cooked tender pieces of smoked chicken blended with a rich tomato-based gravy enriched with butter and subtle spices. Served with basmati rice, dal makhni, a homestyle paratha and gulab jamun.</p><div id="popDescription" style="display: none;"><div><img src="https://product-assets.faasos.io/production/product/image_1598617858116_Smoked%20Butter%20Chicken%20Royal%20Combo-1.jpg" style="width: 350px;"><p>Perfectly cooked tender pieces of smoked chicken blended with a rich tomato-based gravy enriched with butter and subtle spices. Served with basmati rice, dal makhni, a homestyle paratha and gulab jamun.</p></div></div><div id="menuItem3"><div id="menuItem3Left"><button id="ratingButton">4.3<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Empty_Star.svg/768px-Empty_Star.svg.png"></button></div><div id="menuItem3Right" style="display: flex;"><button id="addCartButton">ADD</button></div></div></div></div><div class="menuItem"><div id="menuItem1"><img src="https://product-assets.faasos.io/production/product/image_1598617888174_Chicken%20Kheema%20Royal%20Combo-1.jpg"></div><div id="menuItemPadding"><div id="menuItem2"><div id="menuItem2Left"><span id="menuItemTitle">Chicken Kheema Royal Meal</span></div><div id="menuItem2Right"><img src="/images/veg.png"><span>₹</span><span id="menuItemPrice">310</span></div></div><p id="menuDescription">Finely minced and perfectly spiced chicken kheema is slow-cooked to perfection. Served with basmati rice, dal makhni, a homestyle paratha and gulab jamun.</p><div id="popDescription" style="display: none;"><div><img src="https://product-assets.faasos.io/production/product/image_1598617888174_Chicken%20Kheema%20Royal%20Combo-1.jpg" style="width: 350px;"><p>Finely minced and perfectly spiced chicken kheema is slow-cooked to perfection. Served with basmati rice, dal makhni, a homestyle paratha and gulab jamun.</p></div></div><div id="menuItem3"><div id="menuItem3Left"><button id="ratingButton">4.4<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Empty_Star.svg/768px-Empty_Star.svg.png"></button></div><div id="menuItem3Right" style="display: flex;"><button id="addCartButton">ADD</button></div></div></div></div></div>
+
+        <div id="checkout">
+          <div id="emptyCart"><img src="/images/emptyCart.png" style="border-radius: 15px; width: 100%;" alt=""></div>
+          <div id="cartFull" style="display: none;">
+            <div id="checkout1">
+              <h3>Cart</h3>
+              <p><span id="cartCount">0</span> items</p>
+            </div>
+            <div id="checkout2Container">
+              
+            </div>
+            
+            <div id="checkout3">
+              <div id="checkout3Left">
+                <h3>SubTotal</h3>
+                <span>Extra Charges may apply</span>
+              </div>
+              <div id="checkout3Right">
+                <p><span>₹ </span> <span id="cartPrice">0</span></p>
+              </div>
+            </div>
+            <div id="checkout4">
+              <a href="checkout.html"><button>CHECKOUT</button></a> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr style="margin: 7% 0 0 0" />
+    <div class="footerbox">
+      <div class="contentbox">
+        <div class="apnacontent">
+          <br />
+          <div class="citiesbox">
+            <p class="heading">Cities we deliver to</p>
+            <div class="cityy"><p>Pune</p></div>
+            <div class="cityy"><p>Mumbai</p></div>
+            <div class="cityy"><p>Bangalore</p></div>
+
+            <div class="cityy"><p>Noida</p></div>
+            <div class="cityy"><p>Gurgaon</p></div>
+            <div class="cityy"><p>New Delhi</p></div>
+            <div class="cityy"><p>Hyderabad</p></div>
+            <div class="cityy"><p>Chennai</p></div>
+            <div class="cityy"><p>Indore</p></div>
+            <div class="cityy"><p>Nagpur</p></div>
+            <div class="cityy"><p>Faridabad</p></div>
+            <div class="cityy"><p>Ahmedabad</p></div>
+            <div class="cityy"><p>Ghaziabad</p></div>
+            <div class="cityy"><p>Coimbatore</p></div>
+            <div class="cityy"><p>Dubai</p></div>
+            <div class="cityy"><p>Vadodra</p></div>
+            <div class="cityy"><p>Bhopal</p></div>
+            <div class="cityy"><p>Kolkata</p></div>
+            <div class="cityy"><p>Surat</p></div>
+            <div class="cityy"><p>Mysore</p></div>
+            <div class="cityy"><p>Pondicherry</p></div>
+            <div class="cityy"><p>Nashik</p></div>
+            <div class="cityy"><p>Jaipur</p></div>
+            <div class="cityy"><p>Panchukla</p></div>
+            <div class="cityy"><p>Mohali</p></div>
+            <div class="cityy"><p>Chandigarh</p></div>
+            <div class="cityy"><p>Vijaywada</p></div>
+            <div class="cityy"><p>Vellore</p></div>
+            <div class="cityy"><p>Zirakpur</p></div>
+            <div class="cityy"><p>Lucknow</p></div>
+            <div class="cityy"><p>Kochi</p></div>
+            <div class="cityy"><p>Vizag</p></div>
+            <div class="cityy"><p>Tirupati</p></div>
+            <div class="cityy"><p>Trippur</p></div>
+            <div class="cityy"><p>Kota</p></div>
+            <div class="cityy"><p>Many more...</p></div>
+            <div class="space"></div>
+          </div>
+          <div class="legal_contact">
+            <div class="city37">
+              <p class="heading">Legal</p>
+              <button class="btn">
+                <p>
+                  <a class="href1" href="https://www.faasos.com/terms"
+                    >Terms & Conditions</a
+                  >
+                </p></button
+              ><button class="btn">
+                <p>
+                  <a class="href1" href="https://www.faasos.com/privacy"
+                    >Privacy Policy</a
+                  >
+                </p>
+              </button>
+            </div>
+            <div class="city38">
+              <p class="heading">Contact</p>
+              <button class="btn">
+                <p>
+                  <a class="href1" href="mailto:feasts@faasos.com"
+                    ><svg
+                      class="mail"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="12"
+                      height="12"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path
+                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                      ></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    crm@faasos.com
+                  </a>
+                </p>
+              </button>
+            </div>
+            <div class="space"></div>
+          </div>
+          <hr />
+          <div class="citiesbox1">
+            <div class="left">2020 @ Faasos. All rights reserved</div>
+            <div class="right">
+              <p>Follow us on</p>
+              <a
+                href="https://www.facebook.com/Faasos"
+                class="fa fa-facebook"
+              ></a>
+              <a href="https://twitter.com/faasos" class="fa fa-twitter"></a
+              ><a
+                href="https://www.instagram.com/faasos/"
+                class="fa fa-instagram"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/scripts/database.js"></script>
+  <!-- <script>
+    function toggle() {
+      alert('toggledj')
+      document.body.classList.toggle("toggleDark")
+    }
+  </script> -->
+  <script>
+    const popup = document.querySelector(".offer_popup");
+    const close = document.querySelector(".offer_close");
+  
+    window.onload = function () {
+      setTimeout(function () {
+        popup.style.display = "block";
+      }, 1000);
+    };
+  
+    close.addEventListener("click", () => {
+      popup.style.display = "none";
+    });
+  </script>
+</html>
