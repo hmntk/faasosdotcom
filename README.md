@@ -1,10 +1,10 @@
-# Home page
+# Faasos Home page
 ![Screenshot (269)](https://user-images.githubusercontent.com/28835550/122637287-65575600-d10b-11eb-9797-8ab2e8133215.png)
 # Index page
 ![Screenshot (270)](https://user-images.githubusercontent.com/28835550/122637317-933c9a80-d10b-11eb-8a38-c3a25ca1b017.png)
 
     
-# Faasos
+# Description
 
 In this project we made functional clone of Faasos.com which is one of the leading Quick Service Restaurants, having presence of more than 35 cities in India.
 
