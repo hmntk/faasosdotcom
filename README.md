@@ -13,6 +13,7 @@ In this project we made functional clone of Faasos.com which is one of the leadi
 
 - [@Hemanth-kona](https://github.com/hmntk)
 - [@Amol-barkale](https://github.com/amolbarkale)
+- [@Gagan-Arora](https://github.com/gagan921)
   
 ## Contributing
 
@@ -49,7 +50,7 @@ We are a learner and this is our first clone so faced many issues to build this 
 - Javascript code optimazation
 - 
 ## Support
-For support, email amol_nj2_051@masai.school, hemanth_nj2_077@masai.school or join our Slack channel.
+For support, email amol_nj2_051@masai.school, hemanth_nj2_077@masai.school, garora20044@gmail.com or join our Slack channel.
 
 ## External libraries
 
